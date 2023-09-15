@@ -14,6 +14,6 @@ CS59000-03 Group Project for Course
 ## Taks:
 | Task           | Assigned to   | Current Status | 
 |----------------|---------------|----------------|
-|Approval Procedure||[x]|
+|Approval Procedure|All|[x]|
 |Requirements||[]|
 |Design||[]|
