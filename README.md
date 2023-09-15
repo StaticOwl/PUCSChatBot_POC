@@ -11,7 +11,7 @@ CS59000-03 Group Project for Course
 > * Quick response with even quicker turn around time.
 > * Should be accurate.
 
-## Taks:
+## Tasks:
 | Task           | Assigned to   | Current Status | 
 |----------------|---------------|----------------|
 |Approval Procedure|All|[x]|
