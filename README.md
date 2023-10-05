@@ -19,7 +19,7 @@ CS59000-03 Group Project for Course
 
 ## Tasks:
 | Task           |SubTask| Assigned to   | Current Status | 
-|----------------||---------------|----------------|
+|----------------|-------|---------------|----------------|
 |Approval Procedure||All|[x]|
 |Requirements|All||[x]|
 |Design|Auto Install|@staticowl|[x]|
