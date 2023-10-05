@@ -1,8 +1,8 @@
 from flask import Flask
 
-from admin.api import admin_bp
-from chatbot.api import chatbot_bp
-from server.api import server_bp
+from routes.admin import admin_bp
+from routes.chatbot import chatbot_bp
+from routes.server import server_bp
 
 app = Flask(__name__)
 app.register_blueprint(admin_bp)
