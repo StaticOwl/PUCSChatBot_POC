@@ -11,9 +11,21 @@ CS59000-03 Group Project for Course
 > * Quick response with even quicker turn around time.
 > * Should be accurate.
 
+## Creators:
+> * @sanidhyaRsharma
+> * @staticowl
+> * @knsspsj19
+> * @dannypz97
+
 ## Tasks:
-| Task           | Assigned to   | Current Status | 
-|----------------|---------------|----------------|
-|Approval Procedure|All|[x]|
-|Requirements||[]|
-|Design||[]|
+| Task           |SubTask| Assigned to   | Current Status | 
+|----------------||---------------|----------------|
+|Approval Procedure||All|[x]|
+|Requirements|All||[x]|
+|Design|Auto Install|@staticowl|[x]|
+|Backend|Flask Backbone|@dannypz97|[x]|
+|Backend|Setup APIs|@dannypz97|[]|
+|FrontEnd|React|@sanidhyaRsharma|[x]|
+|Model|Model Type Finalize|@knsspsj19, @staticowl|[]|
+|Model|PreProcessing|@knsspsj19, @staticowl|[]|
+|API|Context||[]|
