@@ -1,0 +1,31 @@
+.chat-window{
+    position:relative;
+}
+.input-box {
+    position: absolute;
+    bottom: 1em;
+    width: 100%;
+    text-align: left;
+}
+.input-form {
+    width: 80%;
+    padding: 10px 5px 10px;
+}
+.message {
+    border: 2px solid black;
+    margin: 2px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.message.user{
+    background-color: rgb(253, 245, 189);
+    text-align: right;
+}
+.message.bot{
+    background-color: white;
+    text-align: left;
+}
+.send-btn {
+    width: 10%;
+    padding: 10px 0 10px;
+}
