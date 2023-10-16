@@ -19,12 +19,17 @@ const ChatUI = () => {
     <div className="chat-ui">
       <div className="chat-window">
         {messages.map((message, index) => (
-          <div
-            key={index}
-            className={`message ${message.sender === 'user' ? 'user' : 'bot'}`}
-          >
-            {message.text}
-          </div>
+            <div className='message-box'>
+               <div className={`sender ${message.sender === 'user' ? 'user' : 'bot'}`}>
+                    <span className="sender-name">{message.sender === 'user' ? 'User' : 'PFW'}</span>
+                </div>
+                <div
+                    key={index}
+                    className={`message ${message.sender === 'user' ? 'user' : 'bot'}`}
+                >
+                    {message.text}
+                </div>
+            </div>
         ))}
       </div>
       <div className="input-box">
