@@ -1,3 +1,8 @@
+from setup.setup import setup
+
+if not setup():
+        raise Exception("Setup failed")
+
 from flask import Flask
 
 from routes.admin import admin_bp
