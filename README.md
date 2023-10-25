@@ -26,6 +26,8 @@ CS59000-03 Group Project for Course
 |Backend|Flask Backbone|@dannypz97|[x]|
 |Backend|Setup APIs|@dannypz97|[]|
 |FrontEnd|React|@sanidhyaRsharma|[x]|
+|Integrate Front-end back-end|React|@sanidhyaRsharma|[x]|
+|Integrate Back-end with model|Flask|@dannypz97|[]|
 |Model|Model Type Finalize|@knsspsj19, @staticowl|[]|
 |Model|PreProcessing|@knsspsj19, @staticowl|[]|
 |API|Context||[]|

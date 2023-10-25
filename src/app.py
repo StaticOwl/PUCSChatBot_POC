@@ -1,5 +1,5 @@
 from setup.setup import setup
-
+from flask_cors import CORS
 if not setup():
         raise Exception("Setup failed")
 
@@ -10,6 +10,8 @@ from routes.chatbot import chatbot_bp
 from routes.server import server_bp
 
 app = Flask(__name__)
+cors = CORS(app)
+app.config['CORS_HEADERS'] = 'Content-Type'
 app.register_blueprint(admin_bp)
 app.register_blueprint(chatbot_bp)
 app.register_blueprint(server_bp)
