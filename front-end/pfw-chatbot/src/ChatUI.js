@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import axios, {isCancel, AxiosError} from 'axios';
 import './ChatUI.css';
 
 const ChatUI = () => {
@@ -24,7 +25,14 @@ const ChatUI = () => {
     setMessages(updatedMessages);
     setNewMessage('');
     //Receive reply from server
-
+    axios.post('http://127.0.0.1:5000/v1/chatbot/chat', {
+    })
+    .then(function (res) {
+      console.log(res);
+      const updatedMessages = [...messages, {text: res.data.response, sender: 'bot'}];
+      setMessages(updatedMessages);
+    })
+    .then(function (err) {console.log(err);})
   };
 
   return (
