@@ -26,6 +26,7 @@ const ChatUI = () => {
     setNewMessage('');
     //Receive reply from server
     axios.post('http://127.0.0.1:5000/v1/chatbot/chat', {
+      user_msg: newMessage,
     })
     .then(function (res) {
       console.log(res);
