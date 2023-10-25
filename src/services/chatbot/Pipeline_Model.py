@@ -1,27 +1,22 @@
+from typing import Callable
+
 from transformers import pipeline
 
-def train(model_id):
-  train_output = pipeline("question-answering", model=model_id)
-  return train_output
+train_output: (Callable | None) = None
 
-def test(data_file, max_answer_len,train_output):
+def train(model_id="deepset/tinyroberta-squad2"):
+    global train_output
+    train_output = pipeline("question-answering", model=model_id)
+
+def test(question, data_file="resources/faculty_data.txt", max_answer_len=50):
     with open(data_file, 'r') as file:
         context = file.read()
 
-    while True:
-        # Ask a question
-        question = input("Ask a question (type 'exit' to quit): ")
+    answer = train_output(question=question, context=context, max_answer_len=max_answer_len)
 
-        if question.lower() == 'exit':
-            break  # Exit the loop if the user types 'exit'
+    return answer['answer']
+        
 
-        # Perform question-answering
-        answer = train_output(question=question, context=context, max_answer_len=max_answer_len)
-
-        print(f"Question: {question}")
-        print(f"Answer: {answer['answer']}")
-
-#Examples
+# #Examples
 # tqa=train("deepset/tinyroberta-squad2")
 # test("faculty_data.txt",50,tqa)
-

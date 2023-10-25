@@ -1,7 +1,7 @@
 from setup.setup import setup
 from flask_cors import CORS
-if not setup():
-        raise Exception("Setup failed")
+
+from services.chatbot.Pipeline_Model import train
 
 from flask import Flask
 
@@ -22,4 +22,5 @@ def handle_exception(e):
 
 
 if __name__ == '__main__':
+    train()
     app.run()

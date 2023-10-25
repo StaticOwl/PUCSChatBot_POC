@@ -1,2 +1,4 @@
-def chat(*args, **kwargs):
-    return "Hardcoded response..."
+from services.chatbot.Pipeline_Model import test
+
+def chat(msg, *args, **kwargs):
+    return test(msg)
