@@ -29,8 +29,8 @@ const ChatUI = () => {
     })
     .then(function (res) {
       console.log(res);
-      const updatedMessages = [...messages, {text: res.data.response, sender: 'bot'}];
-      setMessages(updatedMessages);
+      const updatedMessagesWithRes = [...messages, { text: newMessage, sender: 'user' },{text: res.data.response, sender: 'bot'}];
+      setMessages(updatedMessagesWithRes);
     })
     .then(function (err) {console.log(err);})
   };
