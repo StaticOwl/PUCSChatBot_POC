@@ -1,8 +1,7 @@
 import os
 import subprocess
 import sys
-
-DEFAULT_REQUIREMENTS_FILE_PATH = os.path.join(os.path.dirname(__file__), "requirements.txt")
+from utils.key_utils import stop_key_listener
 
 def check_package(package):
     package_name = package.split('==')[0]
@@ -25,13 +24,14 @@ def install(packages):
         subprocess.check_call([sys.executable, "-m", "pip", "--version",], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     except:
         raise Exception("Pip doesn't exist.")
-        return False
     
     not_installed = []
     installed = []
     installed_user = []
 
     for package in packages:
+        if stop_key_listener():
+            break
         if not package or len(package.strip()) == 0:
             continue
 
@@ -60,15 +60,12 @@ def install(packages):
         print("Installed Packages with user: " + '.'.join(installed_user))
     if len(not_installed) > 0:
         print("Not installed Packages: " + ', '.join(not_installed))
-        return False
-    
-    return True
 
 
-def setup(file_path=DEFAULT_REQUIREMENTS_FILE_PATH):
+def setup(file_path="requirements.txt"):
     with open(file_path) as f:
         packages = f.read().splitlines()
         if len(packages) == 0:
             raise Exception("No packages to install")
-        else: 
-            return install(packages)
+        else:
+            install(packages)
