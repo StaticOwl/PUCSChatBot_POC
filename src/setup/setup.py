@@ -1,5 +1,8 @@
+import os
 import subprocess
 import sys
+
+DEFAULT_REQUIREMENTS_FILE_PATH = os.path.join(os.path.dirname(__file__), "requirements.txt")
 
 def check_package(package):
     package_name = package.split('==')[0]
@@ -29,6 +32,9 @@ def install(packages):
     installed_user = []
 
     for package in packages:
+        if not package or len(package.strip()) == 0:
+            continue
+
         if check_package(package):
             installed.append(package)
             print("Package already installed: " + package)
@@ -59,11 +65,10 @@ def install(packages):
     return True
 
 
-def setup(file_path='src/setup/requirements.txt'):
+def setup(file_path=DEFAULT_REQUIREMENTS_FILE_PATH):
     with open(file_path) as f:
         packages = f.read().splitlines()
         if len(packages) == 0:
             raise Exception("No packages to install")
-            return False
         else: 
             return install(packages)
