@@ -1,11 +1,15 @@
+'''Not willing to use this file as the scrapping for the website is 
+not working as expected, manily due to the cloudflare protection
+and unstructured/incosistent html pages. This script, although is going to serve as
+a great resource for scraping recursively later. For now I am going to use another script
+that I will write in the same directory.'''
+
 import os
 import argparse
 import json
 import asyncio
 from urllib.parse import urljoin
 from playwright.async_api import async_playwright
-
-# Define the URL of your department's website
 
 # Initialize a set to store visited URLs
 os.makedirs("runtime", exist_ok=True)
