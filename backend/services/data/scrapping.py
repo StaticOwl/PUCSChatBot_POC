@@ -8,7 +8,7 @@ import asyncio
 from playwright.async_api import async_playwright, Playwright
 
 
-async def run(playwright: Playwright, url: str):
+async def browse(playwright: Playwright, url: str):
     browser = await playwright.webkit.launch(headless=True)
     page = await browser.new_page()
     await page.goto(url)
@@ -19,8 +19,8 @@ async def scrape():
     async with async_playwright() as playwright, \
             open(os.getenv("URL_LIST_PATH"), "r") as urls:
         for url in urls:
-            await run(playwright, url)
+            await browse(playwright, url)
 
 
-def main():
+def run():
     asyncio.run(scrape())
