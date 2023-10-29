@@ -1,3 +1,7 @@
+''' I am going to use the keyboard module to listen for the keypresses and then
+use that to stop any ongoing loop. This will help on logging the errors safely and properly,
+otherwise KeyboardInterrupt usually gives off a lot of garbage errors.'''
+
 import keyboard
 import queue
 import threading

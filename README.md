@@ -17,6 +17,13 @@ CS59000-03 Group Project for Course
 > * @knsspsj19
 > * @dannypz97
 
+##Prerequisites:
+> 1. keyboard-0.13.5 (from pip)
+> 2. Python (>=3.10)
+
+##Important Instructions:
+> * Have used `esc` as a default escape button for any and every operation in the program.
+
 ## Tasks:
 | Task           |SubTask| Assigned to   | Current Status | 
 |----------------|-------|---------------|----------------|
