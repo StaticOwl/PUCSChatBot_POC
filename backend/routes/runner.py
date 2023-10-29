@@ -16,3 +16,7 @@ app.register_blueprint(server_bp)
 @app.errorhandler(Exception)
 def handle_exception(e):
     return {'error': str(e)}
+
+
+def run():
+    app.run()

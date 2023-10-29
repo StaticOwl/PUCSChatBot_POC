@@ -2,6 +2,10 @@
 use that to stop any ongoing loop. This will help on logging the errors safely and properly,
 otherwise KeyboardInterrupt usually gives off a lot of garbage errors."""
 
+import subprocess
+import sys
+subprocess.check_call([sys.executable, "-m", "pip", "install", "keyboard"], stdout=subprocess.DEVNULL,
+                      stderr=subprocess.DEVNULL)
 import keyboard
 import queue
 import threading
