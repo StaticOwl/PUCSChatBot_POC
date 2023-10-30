@@ -25,16 +25,17 @@ CS59000-03 Group Project for Course
 > * Have used `esc` as a default escape button for any and every operation in the program.
 
 ## Tasks:
-| Task           |SubTask| Assigned to   | Current Status | 
-|----------------|-------|---------------|----------------|
-|Approval Procedure||All|[x]|
-|Requirements|All||[x]|
-|Design|Auto Install|@staticowl|[x]|
-|Backend|Flask Backbone|@dannypz97|[x]|
-|Backend|Setup APIs|@dannypz97|[]|
-|FrontEnd|React|@sanidhyaRsharma|[x]|
-|Integrate Front-end back-end|React|@sanidhyaRsharma|[x]|
-|Integrate Back-end with model|Flask|@dannypz97|[]|
-|Model|Model Type Finalize|@knsspsj19, @staticowl|[]|
-|Model|PreProcessing|@knsspsj19, @staticowl|[]|
-|API|Context||[]|
+| Task                          | SubTask             | Assigned to            | Current Status | 
+|-------------------------------|---------------------|------------------------|----------------|
+| Approval Procedure            | -                   | All                    | [x]            |
+| Requirements                  | -                   | All                    | [x]            |
+| Design                        | Auto Install        | @staticowl             | [x]            |
+| Backend                       | Flask Backbone      | @dannypz97             | [x]            |
+| Backend                       | Setup APIs          | @dannypz97             | [x]            |
+| FrontEnd                      | React               | @sanidhyaRsharma       | [x]            |
+| Integrate Front-end back-end  | React               | @sanidhyaRsharma       | [x]            |
+| Integrate Back-end with model | Flask               | @dannypz97             | [x]            |
+| Model                         | Model Type Finalize | @knsspsj19, @staticowl | [x]            |
+| Model                         | PreProcessing       | @knsspsj19, @staticowl | []             |
+| API                           | Context             | @dannypz97             | []             |
+| Data                          | Scraping URL List   | All                    | []             |
