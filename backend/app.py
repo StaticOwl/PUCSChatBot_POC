@@ -3,6 +3,7 @@ from setup.setup import setup
 from services.data import scrapping
 import argparse
 from routes.runner import app
+from dotenv import load_dotenv
 
 
 if __name__ == '__main__':
@@ -12,7 +13,7 @@ if __name__ == '__main__':
     parser.add_argument('--scraping', '-sc', action='store_true', help='scraping the data from list of urls')
 
     args = parser.parse_args()
-
+    load_dotenv()
     if args.setup:
         setup()
     elif args.scraping:

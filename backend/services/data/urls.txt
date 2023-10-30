@@ -1,21 +1,6 @@
-https://www.w3schools.com/html/html_intro.asp
-https://www.w3schools.com/html/html_elements.asp
-https://www.w3schools.com/html/html_attributes.asp
-https://www.w3schools.com/html/html_headings.asp
-https://www.w3schools.com/html/html_paragraphs.asp
-https://www.w3schools.com/html/html_styles.asp
-https://www.w3schools.com/html/html_formatting.asp
-https://www.w3schools.com/html/html_quotation_elements.asp
-https://www.w3schools.com/html/html_comments.asp
-https://www.w3schools.com/html/html_colors.asp
-https://www.w3schools.com/html/html_css.asp
-https://www.w3schools.com/html/html_links.asp
-https://www.w3schools.com/html/html_images.asp
-https://www.w3schools.com/html/html_tables.asp
-https://www.w3schools.com/html/html_lists.asp
-https://www.w3schools.com/html/html_blocks.asp
-https://www.w3schools.com/html/html_classes.asp
-https://www.w3schools.com/html/html_iframe.asp
-https://www.w3schools.com/html/html_scripts.asp
-https://www.w3schools.com/html/html_filepaths.asp
-https://www.w3schools.com/html/html_head.asp
+https://www.pfw.edu/etcs/computer-science/faculty-and-staff || LongLink || facultyList
+https://www.pfw.edu/about-pfw/who-we-are/directories/zesheng-chen#Biography || ShortLink || profile
+https://www.pfw.edu/about-pfw/who-we-are/directories/zesheng-chen#Education || ShortLink || profile
+https://www.pfw.edu/about-pfw/who-we-are/directories/zesheng-chen#Courses || ShortLink || profile
+https://www.pfw.edu/about-pfw/who-we-are/directories/zesheng-chen#Publications || ShortLink || profile
+https://www.pfw.edu/about-pfw/who-we-are/directories/zesheng-chen#Presentations || ShortLink || profile
