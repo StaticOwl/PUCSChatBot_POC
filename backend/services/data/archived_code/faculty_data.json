@@ -1,0 +1,846 @@
+{
+  "faculty": [
+    {
+      "name": "Adolfo CoroNonedo",
+      "email": "coroNonedo@pfw.edu",
+      "designation": "Chair of Computer Science and Associate",
+      "phone": "260-481-6181"
+    },
+    {
+      "name": "Robert Barrett",
+      "email": "barrett@pfw.edu",
+      "designation": "Professor Emeritus of Computer Science",
+      "phone": "260-481-6179"
+    },
+    {
+      "name": "Thomas Bolinger",
+      "email": "bolitj01@pfw.edu",
+      "designation": "Lecturer in Computer Science",
+      "phone": "260-481-6184"
+    },
+    {
+      "name": "Jacques Chansavang",
+      "email": "chansavj@pfw.edu",
+      "designation": "Lecturer in Computer Science",      
+      "biography": "Academic Experiences: Continuing Lecturer Computer Science (2014-Present) Limited Term Lecturer - Visiting Lecturer (1999-2014) Professional Experiences: International Truck & Engine Corporation (2001-2008) Project Manager; Vehicle Programming Specialist IBM Global Services (1982-2000) IT Specialist: Enterprise Systems Leadership Fort Wayne (Greater Fort Wayne Inc.) 1992-1993 Fort Wayne Community Schools (FWCS) 1978-1982: Teacher Flight Engineer (Multiple Engines): Royal Lao Airlines U.S Air Force - Royal Lao Air Force Academy Aircraft Electrical/Electronics Engineer - Aircraft Mechanical Engineer apprentice IVY Tech College (2002): Adjunct Instructor of Computer Science Areas of Specialization: Computer Science: Network Security and Cyber Forensics. IT Specialist",
+      "courses": [
+        "CS_30600_02: Computers In Society",
+        "CS_30600_03: Computers In Society",
+        "CS_30600_05I: Computers In Society", 
+        "CS_30600_06I: Computers In Society",
+        "CS_59000_09: Cyberwarfare: Info Operations",
+        "IST_35000_01: IT Infrastructure",
+        "IST_35000_02I: IT Infrastructure",
+        "CS_30600_03I: Computers In Society",
+        "CS_30600_08I: Computers In Society", 
+        "CS_30600_06I: Computers In Society",
+        "CS_30600_07I: Computers In Society",
+        "CS_30600_09I: Computers In Society",
+        "CS_30600_2: Computers In Society",
+        "CS_30600_3: Computers In Society",
+        "CS_49200_04I: Cyberware: Inf Oper Connec Wrld",
+        "IST_49200_02I: Cyberware: Inf Oper Connec Wrld", 
+        "IST_26500_02I: Enterprise Systems",
+        "IST_26500_1: Enterprise Systems"
+      ],
+      "phone": "260-481-0205"
+    },
+    {
+      "name": "Zeshen Chen",
+      "email": "chenz@pfw.edu", 
+      "designation": "Associate Professor of Computer Science",
+    
+      "education": [
+        {
+          "degree": "PhD",
+          "institution": "Georgia Institute of Technology, Atlanta",
+          "year": "2007",
+          "major": "Electrical and Computer Engineering"
+        },
+        {
+          "degree": "MS",
+          "institution": "Georgia Institute of Technology, Atlanta",
+          "year": "2005",
+          "major": "Electrical and Computer Engineering"
+        },
+        {
+          "degree": "ME",
+          "institution": "Shanghai Jiao Tong University, Shanghai, ChiNone",
+          "year": "2001",
+          "major": "Electronic Engineering"
+        },
+        {
+          "degree": "BE",
+          "institution": "Shanghai Jiao Tong University, Shanghai, ChiNone",
+          "year": "1998",
+          "major": "Electronic Engineering"
+        }
+      ],
+    
+      "biography": "Dr. Zesheng Chen is currently an Associate Professor of Computer Science in the Department of Computer Science at Purdue University Fort Wayne. He received his M.S. and Ph.D. degrees from the School of Electrical and Computer Engineering at the Georgia Institute of Technology in 2005 and 2007. He also holds B.E. and M.E. degrees from the Department of Electronic Engineering at Shanghai Jiao Tong University, Shanghai, China in 1998 and 2001, respectively. He worked as an assistant professor in the Department of Electrical and Computer Engineering at Florida International University from 2007 to 2009. He moved to Fort Wayne in 2009 and worked as a limited term lecturer in the Department of Engineering and in the Department of Computer Science from 2009 to 2015 at Indiana University - Purdue University Fort Wayne. He also worked as a software engineer at TransWorks from 2012 to 2015. Areas of Specialization Network security, machine learning security, and performance evaluation Additional Websites https://users.pfw.edu/chenz/.",
+      
+      "courses": [
+        "CS_59000_03: Application Of Deep Learning",
+        "CS_23200_02: Intro To C And UNIX", 
+        "ACS_69800_04: Research MS Thesis",
+        "CS_37200_01: Web App Development",
+        "CS_44500_1: Computer Security",
+        "ACS_54500_1: Crypto And Network Security",
+        "CS_23200_1: Intro To C And UNIX",
+        "CS_46500_7: Senior Capstone Project II",
+        "CS_59000_5: Application Of Deep Learning",
+        "CS_23200_1: Intro To C And UNIX",
+        "CS_59000_20: Rsch Adversarial Attacks Defns",
+        "CS_46000_3: Senior Capstone Project I",
+        "CS_37200_1: Web App Development"
+      ],
+    
+      "publications": [
+        {
+          "type": "Journal Article",
+          "authors": "Chen, Z. (accepted)",  
+          "title": "On the Detection of Adaptive Adversarial Attacks in Speaker Verification Systems",
+          "container": "IEEE Internet of Things Journal",
+          "link": "https://doi.org/10.1109/JIOT.2023.3267619"
+        },
+        {
+          "type": "Journal Article",
+          "authors": "Chen, Z., Chang, L., Chen, C., Wang, G., & Bi, Z. (2022)",
+          "title": "Defending against FakeBob Adversarial Attacks in Speaker Verification Systems with Noise-Adding",
+          "container": "Algorithms",
+          "volume": "15(8)",
+          "page": "293",
+          "link": "https://doi.org/https://doi.org/10.3390/a15080293"
+        },
+        {
+          "type": "Journal Article",
+          "authors": "Chen, Z. (2020)", 
+          "title": "Characterising spatial dependence on epidemic thresholds in networks",
+          "container": "International Journal of Security and Networks",
+          "volume": "15(1)",
+          "page": "1--14"
+        },
+        {
+          "type": "Journal Article",  
+          "authors": "Yi, Z., Chen, Z., Pan, J., Yue, L., Lu, Y., Li, J., & Luo, A. (2019)",
+          "title": "An Efficient Spectral Selection of M Giants Using XGBoost",
+          "container": "The Astrophysical Journal",
+          "volume": "887(2)",
+          "page": "241"
+        }
+      ]
+    },
+    {
+      "name": "Seula Daily",
+      "email": "dailys@pfw.edu",
+      "designation": "Computer Science Graduate Program Director",
+      "phone": "260-481-5777"
+    },
+    {
+      "name": "Steven Gardner",
+      "email": "gardsb01@pfw.edu",
+      "designation": "Limited Term Lecturer Credit",
+      "phone": "260-481-6111"
+    },
+    {
+      "name": "Jonathon Gottschalk",
+      "email": "gottjl01@pfw.edu",
+      "designation": "Limited Term Lecturer Credit",
+      "phone": "260-481-6111"
+    },
+    {
+      "name": "Mohammadreza Hajiarbabi",
+      "email": "hajiarb@pfw.edu",
+      "designation": "Assistant Professor of Computer Science",
+      "phone": "260-481-5426"
+    },
+    {
+      "name": "Haytham Idriss",
+      "email": "hidriss@pfw.edu",
+      "designation": "Assistant Professor of Computer Science",
+      "biography": "Haytham Idriss is an Assistant Professor of Computer Science at Purdue University Fort Wayne. He was a post-doctoral researcher at the University of Louisiana at Lafayette, where he also received his Ph.D. degree in computer engineering. He received his M.Sc. in computer engineering from the University of Louisiana at Lafayette, USA, and his B.Sc. degree in computer engineering from the University of Balamand, Lebanon. His research interests include fault-tolerant design, IoT Security, and Machine Learning.",
+      "education": "PhD, University of Louisiana at Lafayette, 2021. Major: Computer Engineering Supporting Areas of Emphasis: Hardware Security Dissertation Title: Highly Reliable and Lightweight PUFs for Constrained IoT Devices MS, University of Louisiana at Lafayette, 2016. Major: Computer Engineering",
+      "courses": "Fall 2023 CS_44500_01: Computer Security CS_26000_02: Data Structures CS_50300_01: Operating Systems Spring 2023 CS_26000_2: Data Structures CS_50300_1: Operating Systems CS_50300_2: Operating Systems CS_50300_2: Operating Systems CS_46500_9: Senior Capstone Project II Fall 2022 CS_26000_3: Data Structures CS_50300_1: Operating Systems CS_50300_2: Operating Systems",
+      "publications": "Journal Article Idriss, T. A., Idriss, H., & Bayoumi, M. A. (2021). A Lightweight PUF-Based Authentication Protocol Using Secret Pattern Recognition for Constrained IoT Devices. IEEE Access, 9, 80546–80558. https://doi.org/10.1109/access.2021.3084903 Conference Proceeding Alahmady, S., Idriss, H., Rojas, P., & Bayoumi, M. (2023, July 21). Security Scalability of Arbiter PUF Designs. Published. Alahmady, S., Rojas, P., Idriss, H., & Bayoumi, M. (2023, May 8). Taxonomy of Consumer and Industrial IoT. Published. Idriss, T., Gavin, A., Gabales, A., Idriss, H., & Bayoumi, M. (2022, November 11). XFeed PUF: A Secure and Efficient Delay-based Strong PUF Using Cross-Feed Connections. Published. https://doi.org/10.1109/ISCAS48785.2022.9937815 Idriss, H., Rojas, P., Alahmady, S., Idriss, T., Carlson, A., & Bayoumi, M. (2022, November 11). Shadow PUFs: Generating Temporal PUFs with properties Isomorphic to Delay Based APUFs. Published. Rojas, P., Idriss, H., Alahmady, S., & Bayoumi, M. (2022, November 11). Stochastic Selection of Responses for Physically Unclonable Functions. Published. Williams, P., Idriss, H., & Bayoumi, M. (2021, July 26). Mc-PUF: Memory-based and Machine Learning Resilient Strong PUF for Device Authentication in Internet of Things. 2021 IEEE International Conference on Cyber Security and Resilience (CSR). Published. https://doi.org/10.1109/csr51186.2021.9527930 Rojas, P., Idriss, H., & Bayoumi, M. (2020, June). Comparative Analysis on the Scaling Properties of Arbiter-based PUFs. 2020 IEEE 6th World Forum on Internet of Things (WF-IoT). Published. https://doi.org/10.1109/wf-iot48130.2020.9221421 Idriss, H., Idriss, T., Williams, P., & Bayoumi, M. (2020, June). Memory-based Arbiter PUF: A Novel Highly Reliable and Scalable Strong PUF Design. 2020 IEEE 6th World Forum on Internet of Things (WF-IoT). Published. https://doi.org/10.1109/wf-iot48130.2020.9221015 Idriss, H., Idriss, T., & Bayoumi, M. (2017, September). A highly reliable dual-arbiter PUF for lightweight authentication protocols. 2017 IEEE International Conference on RFID Technology & Application (RFID-TA). Published. https://doi.org/10.1109/rfid-ta.2017.8098903 Idriss, T., Idriss, H., & Bayoumi, M. (2016, December). A PUF-based paradigm for IoT security. 2016 IEEE 3rd World Forum on Internet of Things (WF-IoT). Published. https://doi.org/10.1109/wf-iot.2016.7845456 Shaban, M., Idriss, T., Idriss, H., & Bayoumi, M. (2015, April). ASIC implementation of a computationally efficient compressive sensing detection method using least squares optimization in 45 nm CMOS technology. 2015 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP). Published. https://doi.org/10.1109/icassp.2015.7178139",
+      "phone": "260-481-6817"
+    },
+    {
+      "name": "Venkata Inukollu",
+      "email": "inukollv@pfw.edu",
+      "designation": "Assistant Professor of Computer Science",
+      "phone": "260-481-0188"
+    },
+    {
+      "name": "Jay Johns",
+      "email": "jdjohns@pfw.edu",
+      "designation": "Lecturer in Computer Science",
+      "biography": "Jay Johns holds an undergrad degree in Video Game Design and a Master's degree in Human-Computer Interaction. He has been involved in the technology industry since 2007, working in game design, owning a software development company, and serving as an on-demand Chief Technology Officer for various startup companies. He has over six years of experience teaching at the college level.",
+      "education": [
+        {
+          "degree": "MS",
+          "institution": "Indiana University Purdue University Indianapolis",
+          "year": 2017,
+          "major": "Human-Computer Interaction",
+          "dissertation_title": "Development of a Brain Computer Interface"
+        },
+        {
+          "degree": "BS",
+          "institution": "Collins College",
+          "year": 2009,
+          "major": "Video Game Design"
+        }
+      ],
+      "courses": [
+        "CS_27100_02: Computer Architecture",
+        "CS_36800_01: Human Comp Interaction",
+        "CS_36800_01: Human Comp Interaction",
+        "CS_36800_02I: Human Comp Interaction",
+        "ACS_56400_01: Human Computer Inter",
+        "CS_59000_21: Low-Code No-Code Rapid Protyping",
+        "ACS_69800_03: Research MS Thesis",
+        "CS_46000_06: Senior Capstone Project I",
+        "CS_59000_12: Topics In AI/ML-Power Code",
+        "CS_59000_13: Topics In User Experience",
+        "CS_59000_04: User Exp UX Design And Ethics",
+        "CS_27100_1: Computer Architecture",
+        "CS_27100_1: Computer Architecture-HON",
+        "CS_59000_10: Game Design Core Skills",
+        "ACS_56400_1: Human Computer Inter",
+        "IST_44000_02I: Introduction To HCI",
+        "IST_44000_1: Introduction To HCI",
+        "ACS_69800_4: Research MS Thesis",
+        "CS_46500_2: Senior Capstone Project II",
+        "CS_59000_15: Topics in AI/ML-Powered Code C",
+        "CS_59000_11: User Exp UX Design And Ethics",
+        "CS_27100_1: Computer Architecture",
+        "CS_59000_12: DB Pro AI & ML Tools for Indus",
+        "CS_59000_11: Dev Web/Mobile Ap PrtFood Vend",
+        "CS_36800_02I: Human Comp Interaction",
+        "CS_36800_1: Human Comp Interaction",
+        "ACS_56400_1: Human Computer Inter",
+        "ACS_56400_1: Human Computer Inter",
+        "ITC_37000_01: Human Computer Interaction",
+        "ITC_37000_02I: Human Computer Interaction",
+        "IST_44000_01: Introduction To HCI",
+        "IST_44000_02I: Introduction To HCI",
+        "CS_46500_02: Senior Capstone Project II",
+        "CS_36800_1: Human Comp Interaction"
+      ],
+      "publications": [
+        {
+          "type": "Book",
+          "title": "Demon Winters",
+          "year": 2014,
+          "publisher": "3r Interactive, LLC",
+          "url": "https://www.amazon.com/Demon-Winters-Marcos-Zuniga-ebook/dp/B00IURKDWU/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=1641180661&sr=8-1"
+        },
+        {
+          "type": "Conference Proceeding",
+          "title": "Classroom Gamification: Merging Game Design Theory and Behavior Analysis for Increased Engagement",
+          "year": 2018,
+          "publisher": "Learning and Collaboration Technologies, Learning and Teaching, Lecture Notes in Computer Science, vol 10925 | Also (LNISA, volume 10925)",
+          "url": "https://doi.org/https://doi.org/10.1007/978-3-319-91152-6_12"
+        },
+        {
+          "type": "Conference Proceeding",
+          "title": "Strategic Design: Breaking Mental Models Initiates Learning in Video Games",
+          "year": 2017,
+          "publisher": "International Conference on Learning and Collaboration Technologies., LNCS, volume 10295",
+          "url": "https://doi.org/https://doi.org/10.1007/978-3-319-58509-3_35"
+        },
+        {
+          "type": "Magazine/Trade Publication",
+          "title": "Designing player death: Using intention and meaning to add depth",
+          "year": 2017,
+          "url": "https://www.gamedeveloper.com/design/designing-player-death-using-intention-and-meaning-to-add-depth"
+        }
+      ],
+      "presentations": [
+        {
+          "event": "M+DEV Conference",
+          "title": "Funding Your Indie Game: Different Ways We Funded Development Through the Years",
+          "location": "Allegiant Energy Center, Madison WI, Madison, WI, United States",
+          "date": "November 2, 2022"
+        },
+        {
+          "event": "Great Lakes Games Expo (GLGX)",
+          "title": "Lessons Learned from 14 Years in Game Development",
+          "location": "Virtual",
+          "date": "February 26, 2022"
+        },
+        {
+          "event": "HCI International 2018 Conference",
+          "title": "Classroom Gamification: Merging Game Design Theory and Behavior Analysis for Increased Engagement",
+          "location": "Caesars Palace, Las Vegas, NV, United States",
+          "date": "July 2018"
+        },
+        {
+          "event": "HCI International 2017",
+          "title": "Strategic Design: Breaking Mental Models Initiates Learning in Video Games",
+          "location": "Vancouver Convention Centre, Vancouver, Canada",
+          "date": "July 2017"
+        }
+      ],
+      "phone": "260-481-6343"
+    },
+    {
+      "name": "John Kaufeld",
+      "designation": "Visiting Instructor in Organizational Le",
+      "phone": "260-481-5425",
+      "email": "john.kaufeld@pfw.edu"
+    },
+    {
+      "name": "Amal Khalifa",
+      "designation": "Assistant Professor of Computer Science",
+      "phone": "260-481-6867",
+      "email": "khalifaa@pfw.edu"
+    },
+    {
+      "name": "Beomjin Kim",
+      "designation": "Professor of Computer Science",
+      "phone": "260-481-6180",
+      "email": "kimb@pfw.edu",
+      "biography": "Professor of Computer Science Department Director of Information Analytics and Visualization Center Areas of Specialization: Information Visualization, Data Analytics, Virtual Reality, Computer Graphics.",
+      "education": [
+        {
+          "degree": "PhD",
+          "institution": "Illinois Institute of Technology",
+          "year": 1998,
+          "major": "Computer Science"
+        },
+        {
+          "degree": "MS",
+          "institution": "Illinois Institute of Technology",
+          "year": 1989,
+          "major": "Computer Science"
+        },
+        {
+          "degree": "BS",
+          "institution": "Inha University",
+          "year": 1988,
+          "major": "Computer Science"
+        }
+      ],
+      "courses": [
+        "CS_59000_17: Data Analytics And Visual",
+        "CS_26000_03: Data Structures",
+        "CS_46000_01: Senior Capstone Project I",
+        "CS_26000_1: Data Structures",
+        "CS_46500_1: Senior Capstone Project II",
+        "CS_26000_2: Data Structures",
+        "CS_46000_04: Senior Capstone Project I",
+        "CS_46000_1: Senior Capstone Project I",
+        "CS_26000_01: Data Structures",
+        "CS_46500_01: Senior Capstone Project II",
+        "CS_26000_2: Data Structures",
+        "CS_26000_2: Data Structures",
+        "CS_49400_01I: Modern Agile Software Develop",
+        "CS_46000_1: Senior Capstone Project I",
+        "CS_49400_2: Topics In Virtual Environments",
+        "CS_29500_1: Industrial Practicum",
+        "CS_46500_1: Senior Capstone Project II",
+        "CS_49400_1: Web Design Practicum",
+        "CS_32100_03I: Intro To Comp Graphics",
+        "CS_32100_1: Intro To Comp Graphics",
+        "CS_46000_1: Senior Capstone Project I",
+        "CS_59000_4: Topics In info Visualization",
+        "CS_29500_1: Industrial Practicum",
+        "CS_46500_1: Senior Capstone Project II"
+      ],
+      "publications": [
+        {
+          "type": "Book Chapter",
+          "authors": "Kim, B., Scott, J., & Kim, S.",
+          "title": "Exploring Digital Libraries through Visual Interfaces",
+          "container": "Digital Libraries - Methods and Applications",
+          "publisher": "InTech",
+          "url": "https://doi.org/10.5772/14255"
+        },
+        {
+          "type": "Book Chapter",
+          "authors": "Wolfe, B., Kim, B., Aeschliman, B., & Sedlmeyer, R. L.",
+          "title": "Evaluating 3D Vision for Command and Control Applications",
+          "container": "Advances in Visual Computing",
+          "publisher": "Springer Berlin Heidelberg",
+          "url": "https://doi.org/10.1007/978-3-642-41939-3_73"
+        },
+        {
+          "type": "Book Chapter",
+          "authors": "Hartzell, T., Thompson, M., & Kim, B.",
+          "title": "The Influence of Graphics Effects on Perceiving Depth in Minimized Virtual Environments",
+          "container": "Communications in Computer and Information Science",
+          "publisher": "Springer Berlin Heidelberg",
+          "url": "https://doi.org/10.1007/978-3-642-35594-3_33"
+        },
+        {
+          "type": "Book Chapter",
+          "authors": "Isik-Ercan, Z., Kim, B., & Nowak, J. A.",
+          "title": "3D Visualization in Elementary Education Astronomy: Teaching Urban Second Graders about the Sun, Earth, and Moon",
+          "container": "Knowledge Management, Information Systems, E-Learning, and Sustainability Research",
+          "publisher": "Springer Berlin Heidelberg",
+          "url": "https://doi.org/10.1007/978-3-642-16318-0_64"
+        },
+        {
+          "type": "Book Chapter",
+          "authors": "Scott, J., Kim, B., & Chhabada, S.",
+          "title": "Visualized Index-Based Search for Digital Libraries",
+          "container": "Advances in Visual Computing",
+          "publisher": "Springer Berlin Heidelberg",
+          "url": "https://doi.org/10.1007/978-3-642-10331-5_12"
+        },
+        {
+          "type": "Book Chapter",
+          "authors": "Kim, B., Johnson, P., & Baker, J.",
+          "title": "Empirical Evaluation of a Visual Interface for Exploring Message Boards",
+          "container": "Advances in Visual Computing",
+          "publisher": "Springer Berlin Heidelberg",
+          "url": "https://doi.org/10.1007/11919476_30"
+        },
+        {
+          "type": "Book Chapter",
+          "authors": "Kim, B.",
+          "title": "Visual Interface for Evaluating Internet Search Results",
+          "container": "Database Systems for Advanced Applications",
+          "publisher": "Springer Berlin Heidelberg",
+          "url": "https://doi.org/10.1007/978-3-540-24571-1_49"
+        },
+        {
+          "type": "Book Chapter",
+          "authors": "Kim, B.",
+          "title": "Experimental Evaluation of Query Fingerprinting with Embedded Search Term Markers",
+          "container": "Computational Science and Its Applications — ICCSA 2003",
+          "publisher": "Springer Berlin Heidelberg",
+          "url": "https://doi.org/10.1007/3-540-44843-8_58"
+        },
+        {
+          "type": "Journal Article",
+          "authors": "Kim, B., Johnson, P., & S. Huarng, A.",
+          "title": "Colored-sketch of Text Information",
+          "container": "Informing Science: The International Journal of an Emerging Transdiscipline",
+          "volume": "5",
+          "page": "163–173",
+          "url": "https://doi.org/10.28945/547"
+        },
+        {
+          "type": "Journal Article",
+          "authors": "Welch, T., Short, G., & Kim, B.",
+          "title": "Visual Interfaces Designed for Searching Text Content on Mobile Devices",
+          "container": "International Journal of Knowledge Engineering",
+          "volume": "1(3)",
+          "page": "230–235",
+          "url": "https://doi.org/10.18178/ijke.2015.1.3.040"
+        },
+        {
+          "type": "Journal Article",
+          "authors": "Isik-Ercan, Z., Zeynep Inan, H., Nowak, J. A., & Kim, B.",
+          "title": "‘We put on the glasses and Moon comes closer!’ Urban Second Graders Exploring the Earth, the Sun and Moon Through 3D Technologies in a Science and Literacy Unit",
+          "container": "International Journal of Science Education",
+          "volume": "36(1)",
+          "page": "129–156",
+          "url": "https://doi.org/10.1080/09500693.2012.739718"
+        },
+        {
+          "type": "Journal Article",
+          "authors": "Isik-Ercan, Z., Kim, B., & Nowak, J. A.",
+          "title": "Can 3D Visualization Assist in Young Children’s Understanding of Sun-Earth-Moon System?",
+          "container": "International Journal of Knowledge Society Research",
+          "volume": "3(4)",
+          "page": "12–21",
+          "url": "https://doi.org/10.4018/jksr.2012100102"
+        },
+        {
+          "type": "Journal Article",
+          "authors": "-",
+          "title": "A Technique for Creating Visually Abstracted Geometric Thumbnails of Web Documents for Mobile Devices",
+          "container": "International Journal of Digital Content Technology and Its Applications",
+          "volume": "6(13)",
+          "page": "470–481",
+          "url": "https://doi.org/10.4156/jdcta.vol6.issue13.51"
+        },
+        {
+          "type": "Journal Article",
+          "authors": "Kim, B., Soble, J. S., Stamos, T. D., Neumann, A., & Robergé, J.",
+          "title": "Automated Volumetric Flow Quantification Using Angle-Corrected Color Doppler Image",
+          "container": "Echocardiography",
+          "volume": "21(5)",
+          "page": "399–408",
+          "url": "https://doi.org/10.1111/j.0742-2822.2004.03066.x"
+        },
+        {
+          "type": "Journal Article",
+          "authors": "Kim, S., Park, J., Kim, B., Lee, S. K., Kim, D. U., & Kim, Y.",
+          "title": "Self-assembled interconnection by bamboo-like carbon nanotubes",
+          "container": "Materials Science and Engineering: C",
+          "volume": "24(1-2)",
+          "page": "297–300",
+          "url": "https://doi.org/10.1016/j.msec.2003.09.028"
+        },
+        {
+          "type": "Journal Article",
+          "authors": "Soble, J. S., Stamos, T., Kim, B., Neumann, A., Stein, J. H., Kim, D. H., Parillo, J. E., Robergé, J., & Marcus, R. H.",
+          "title": "Accuracy of computerized quantitative analysis of digital color flow Doppler images for stroke volume determination",
+          "container": "Journal of the American College of Cardiology",
+          "volume": "27(2)",
+          "page": "267",
+          "url": "https://doi.org/10.1016/s0735-1097(96)81958-9"
+        },
+        {
+          "type": "Conference Proceeding",
+          "authors": "Kim, B.",
+          "title": "A conference paper is in preparation that will be submitted for review in 2023. “Visual Interfaces for Exploring a Collection of Articles on Digital Library Systems”",
+          "publisher": "(Co-author: Dr. Jeffrey Malanson, Chaitanya Subhedar, Isaiah Fisher)"
+        },
+        {
+          "type": "Conference Proceeding",
+          "authors": "Kim, B.",
+          "title": "A conference paper is in preparation that will be submitted for review in Spring 2023. “Improving 3D Depth Perception in Magnified and Minimized Virtual Environments”",
+          "publisher": "(Co-author: Thomas Bolinger)"
+        },
+        {
+          "type": "Conference Proceeding",
+          "authors": "Kim, B., & M. C. T. B. G. W. M. P.",
+          "title": "Summer Computing Camp to Compare and Contrast CS/IT/CE Programs",
+          "container": "Proceedings of the 23rd Annual Conference on Information Technology Education",
+          "page": "88–89"
+        },
+        {
+          "type": "Conference Proceeding",
+          "authors": "Thompson, M., Kim, B., Bolinger, T. J., & Hartzell, T.",
+          "title": "Enhanced Graphics Techniques for Improving Depth Perception Accuracy in Magnified Virtual Environments",
+          "container": "Proceedings of the 2019 International Conference on Video, Signal and Image Processing",
+          "url": "https://doi.org/10.1145/3369318.3369342"
+        },
+        {
+          "type": "Conference Proceeding",
+          "authors": "Thompson, M., Kim, B., Bolinger, T. J., & Hartzell, T.",
+          "title": "The Effect of Computer Graphics Techniques on Perceiving Depth in Magnified Virtual Environments",
+          "container": "Proceedings of the 2nd International Conference on Digital Signal Processing - ICDSP 2018",
+          "url": "https://doi.org/10.1145/3193025.3193061"
+        },
+        {
+          "type": "Conference Proceeding",
+          "authors": "Short, G., & Kim, B.",
+          "title": "Multi-tiered Visual Interfaces for Book Search with Digital Library Systems",
+          "container": "2014 6th International Conference on Multimedia, Computer Graphics and Broadcasting",
+          "url": "https://doi.org/10.1109/mulgrab.2014.12"
+        },
+        {
+          "type": "Conference Proceeding",
+          "authors": "Aeschliman, B., Kim, B., & Burton, M.",
+          "title": "A visual analysis of spatio-temporal data associated with human movement",
+          "container": "Proceedings of the 17th ACM SIGSPATIAL International Conference on Advances in Geographic Information Systems - GIS '09",
+          "url": "https://doi.org/10.1145/1653771.1653829"
+        }
+      ],
+      "presentations": [
+        {
+          "authors": "Kim, B., Parker, M. presented a paper",
+          "title": "Summer Computing Camp to Compare and Contrast CS/IT/CE Programs",
+          "event": "23rd Annual Conference on Information Technology Education",
+          "location": "ACM SIGITE 2022, Chicago, IL"
+        }
+      ]
+    },
+    {
+      "name": "David Liu",
+      "designation": "Associate Professor Computer Science",
+      "phone": "260-481-0182",
+      "email": "liud@pfw.edu"
+    },
+    {
+      "name": "Peter Ng",
+      "designation": "Professor of Computer Science",
+      "phone": "260-481-6237",
+      "email": "ngp@pfw.edu",
+      "biography": "Currently, Dr. Peter A. Ng is the Professor of Computer Science at Indiana University-Purdue University Fort Wayne (IPFW). Prior to this appointment, he was the Professor and Chairperson of Computer Science at Purdue University Fort Wayne (2008_2015) and at the University of Texas-Pan American (2003-2008), the University of Nebraska at Omaha (1998_2000), and New Jersey Institute of Technology (1986_1997). He was also the editor-in-chief, editor, and editorial board member for 5 international-circulated journals (IEEE Transactions on Software Engineering, Journal on Systems Integration, Transactions of the SDPS: Journal of Integrated Design & Process Science, etc.). He was also the funding chairperson, chairperson, and the Technical Program Committee (TPC) member for more than 30 international conferences. He was the author and/or co-author of more than 100 publications. Dr. Ng has been the PI and Co-PI of many research and educational projects, which have received more than 7.5 Million grants from U.S. funding agencies and industry.",
+      "education": [
+        {
+          "degree": "PhD",
+          "institution": "University of Texas Austin",
+          "year": 1974,
+          "major": "Computer Science",
+          "supporting_areas": "Numerical Analysis"
+        },
+        {
+          "degree": "BS",
+          "institution": "St. Edward's University",
+          "year": 1969,
+          "major": "Mathematics"
+        }
+      ],
+      "courses": [
+        "CS_58000_01: Alg Design Anly & Impl",
+        "CS_48600_01: Analysis Of Algorithms",
+        "CS_16000_01: Intro To Comp Sci I",
+        "CS_16000_02: Intro To Comp Sci I",
+        "CS_16000_03: Intro To Comp Sci I",
+        "CS_48600_1: Analysis Of Algorithms",
+        "CS_38000_1: Artificial Intelligence",
+        "CS_57200_1: Heuristic Prblm Solvng",
+        "CS_16000_4: Intro To Comp Sci I",
+        "CS_16000_5: Intro To Comp Sci I",
+        "CS_16000_6: Intro To Comp Sci I",
+        "CS_16000_7: Intro To Comp Sci I",
+        "CS_58000_02I: Alg Design Anly & Impl",
+        "CS_58000_02I: Alg Design Anly & Impl",
+        "CS_58000_1: Alg Design Anly & Impl",
+        "CS_48600_1: Analysis Of Algorithms",
+        "CS_16000_1: Intro To Comp Sci I",
+        "CS_16000_2: Intro To Comp Sci I",
+        "CS_16000_3: Intro To Comp Sci I",
+        "CS_48600_01: Analysis Of Algorithms",
+        "CS_38000_01: Artificial Intelligence",
+        "CS_57200_01: Heuristic Prblm Solvng",
+        "CS_16000_04: Intro To Comp Sci I",
+        "CS_16000_05: Intro To Comp Sci I",
+        "CS_16000_06: Intro To Comp Sci I",
+        "CS_16000_07: Intro To Comp Sci I",
+        "CS_58000_02I: Alg Design Anly & Impl",
+        "CS_58000_02I: Alg Design Anly & Impl",
+        "CS_58000_1: Alg Design Anly & Impl",
+        "CS_48600_1: Analysis Of Algorithms",
+        "CS_16000_1: Intro To Comp Sci I",
+        "CS_16000_2: Intro To Comp Sci I",
+        "CS_16000_3: Intro To Comp Sci I",
+        "CS_16000_4: Intro To Comp Sci I",
+        "CS_48600_1: Analysis Of Algorithms",
+        "CS_38000_1: Artificial Intelligence",
+        "CS_57200_01I: Heuristic Prblm Solvng",
+        "CS_57200_01I: Heuristic Prblm Solvng",
+        "CS_16000_5: Intro To Comp Sci I",
+        "CS_16000_6: Intro To Comp Sci I",
+        "CS_16000_7: Intro To Comp Sci I",
+        "CS_58000_01D: Alg Design Anly & Impl",
+        "CS_58000_01I: Alg Design Anly & Impl",
+        "CS_58000_01I: Alg Design Anly & Impl",
+        "CS_59000_6: Algorithmic Programming",
+        "CS_48600_1: Analysis Of Algorithms",
+        "CS_16000_1: Intro To Comp Sci I",
+        "CS_16000_2: Intro To Comp Sci I",
+        "CS_16000_3: Intro To Comp Sci I",
+        "CS_48600_1: Analysis Of Algorithms",
+        "CS_38000_1: Artificial Intelligence",
+        "CS_57200_1: Heuristic Prblm Solvng",
+        "CS_16000_1: Intro To Comp Sci I",
+        "CS_16000_2: Intro To Comp Sci I",
+        "CS_16000_3: Intro To Comp Sci I",
+        "CS_16000_4: Intro To Comp Sci I",
+        "CS_58000_01D: Alg Design Anly & Impl",
+        "CS_58000_01I: Alg Design Anly & Impl",
+        "CS_58000_01I: Alg Design Anly & Impl",
+        "CS_48600_1: Analysis Of Algorithms",
+        "CS_16000_6: Intro To Comp Sci I",
+        "CS_16000_7: Intro To Comp Sci I",
+        "CS_16000_8: Intro To Comp Sci I"
+      ],
+      "publications": [
+        {
+          "type": "Journal Article",
+          "authors": "Ng, P. A.",
+          "title": "The following articles are a sample of my publications I have listed in this vitae.",
+          "notes": []
+        },
+        {
+          "type": "Journal Article",
+          "authors": "Hu, T.M., S.Y. Sung, J. Sun, X.W. Ai and P. A. Ng",
+          "title": "A Linear Transform Scheme for Building Weighted Scoring Rules",
+          "container": "Intelligent Data Analysis_An International Journal",
+          "volume": "16(3)",
+          "page": "383-407",
+          "year": "2012"
+        },
+        {
+          "type": "Journal Article",
+          "authors": "Wei, C.S.D., J.G. Doong, and P. A. Ng",
+          "title": "ONTOAPP: An Ontolog Application on Solving some Heterogeneous Problems of Healthcare Information Sharing and Interoperability",
+          "container": "Transactions of the SDPS: Journal of Integrated Design and Process Science",
+          "volume": "15(4)",
+          "page": "27-48",
+          "year": "2011"
+        },
+        {
+          "type": "Journal Article",
+          "authors": "Sung, S. Y., Y. Liu, H. Xiong and P.A. Ng",
+          "title": "Privacy Preservation for Data Cubes",
+          "container": "Journal of Knowledge and Information Systems (KAIS)",
+          "volume": "9(1)",
+          "page": "38-61 (Online version), 1215-1240 (Printed version)",
+          "year": "2006"
+        },
+        {
+          "type": "Journal Article",
+          "authors": "Sung, S.Y., Z. Li, C. L. Tan and P.A. Ng",
+          "title": "Forecasting Association Rules Using Existing Datasets",
+          "container": "IEEE Transactions on Data and Knowledge Engineering",
+          "volume": "15(6)",
+          "page": "1448-1459",
+          "year": "2003"
+        },
+        {
+          "type": "Journal Article",
+          "authors": "Liu, Q.H.* and P.A. Ng",
+          "title": "A Query Generalizer for Providing Cooperative Responses in an Office Document System",
+          "container": "Data and Knowledge Engineering Journal",
+          "volume": "27(2)",
+          "page": "177-205",
+          "year": "1998"
+        },
+        {
+          "type": "Journal Article",
+          "authors": "Yang, C.C., G. Li and P.A. Ng",
+          "title": "An Improved Algorithm Based on Subset Closures for Synthesizing a Relational Database Scheme",
+          "container": "IEEE Transactions on Software Engineering",
+          "volume": "14(11)",
+          "page": "1731-1738",
+          "year": "1988"
+        },
+        {
+          "type": "Conference Proceeding",
+          "authors": "Hu, T.M., C.R. Liu, J. Sun, S. Y. Sung, and P. A. Ng",
+          "title": "Pairwise Constrained Clustering with Group Similarity-Based Patterns",
+          "container": "Proceedings of IEEE the Ninth International Conference on Machine Learning and Applications (ICMLA 2010), Washington DC",
+          "page": "260-265",
+          "publisher": "IEEE Computer Society, ISBN 978-0-7695-4300-0",
+          "year": "2010"
+        }
+      ]
+    },
+    {
+      "name": "Kaye Pitcher",
+      "designation": "Administrative Assistant",
+      "phone": "260-481-6803",
+      "email": "pitcherk@pfw.edu"
+    },
+    {
+      "name": "Jon Rusert",
+      "designation": "Assistant Professor of Computer Science",
+      "phone": "260-481-5760",
+      "email": "jrusert@pfw.edu"
+    },
+    {
+      "name": "Nabila Safdar",
+      "designation": "Limited Term Lecturer - Credit",
+      "phone": "260-481-6817",
+      "email": "chauns01@pfw.edu"
+    },
+    {
+      "name": "Robert Sedlmeyer",
+      "designation": "Professor Emeritus of Computer Tech",
+      "email": "sedlmeye@pfw.edu"
+    },
+    {
+      "name": "Mason Storm",
+      "designation": "Limited Term Lecturer - Credit",
+      "phone": "260-481-6111",
+      "email": "storms01@pfw.edu"
+    },
+    {
+      "name": "Chase Walters",
+      "designation": "Application Software Developer",
+      "phone": "260-481-5763",
+      "email": "waltcm02@pfw.edu"
+    },
+    {
+      "name": "Jin Soung Yoo",
+      "designation": "Professor Computer Science",
+      "phone": "260-481-6946",
+      "email": "yooj@pfw.edu",
+      "biography": "Dr. Yoo received her Ph.D. degree in Computer Science from the University of Minnesota, Twin Cities in 2007. She also received her M.S. degree in Computer Science from the University of Minnesota. She studied double majors at college and received two bachelor degrees in Computer Science and Statistics from Korea University (KU, or pronounced as Goryeo U in Korea). After the undergraduate study, she worked at Samsung SDS Co. as a software engineer for over seven years. Dr. Yoo is currently a full Professor in the Department of Computer Science at Purdue University Fort Wayne (PFW).",
+      "education": [
+        {
+          "degree": "PhD",
+          "institution": "University of Minnesota",
+          "year": 2007,
+          "major": "Computer Science",
+          "supporting_areas": "Data Mining, Machine Learning, Database System"
+        },
+        {
+          "degree": "MS",
+          "institution": "University of Minnesota",
+          "year": 2006,
+          "major": "Computer Science"
+        },
+        {
+          "degree": "BS",
+          "institution": "Korea University",
+          "year": 1992,
+          "major": "Computer Science"
+        },
+        {
+          "degree": "BS",
+          "institution": "Korea Univeristy",
+          "year": 1990,
+          "major": "Statistics"
+        }
+      ],
+      "courses": [
+        "CS_36400_01: Intro To DataBase Sys",
+        "CS_57600_01: Machine Learning",
+        "CS_57600_02I: Machine Learning",
+        "CS_33100_02I: Intro To C++ & OOP",
+        "ACS_57700_1: Know Discovery&Data Mining",
+        "CS_36500_1: Advanced Database Sys",
+        "ACS_57500_02I: Database Systems",
+        "ACS_57500_1: Database Systems",
+        "IDIS_69300_5: Internship Experience",
+        "CS_36400_1: Intro To DataBase Sys",
+        "IDIS_69300_1: Internship Experience",
+        "CS_36400_1: Intro To DataBase Sys",
+        "CS_57600_02I: Machine Learning",
+        "CS_57600_1: Machine Learning",
+        "CS_33100_02I: Intro To C++ & OOP",
+        "CS_36400_1: Intro To DataBase Sys",
+        "CS_59000_8: Machine Learning",
+        "CS_33100_01D: Intro To C++ & OOP",
+        "CS_33100_02I: Intro To C++ & OOP",
+        "CS_36500_1: Advanced Database Sys",
+        "ACS_57500_1: Database Systems",
+        "CS_36400_03M: Intro To DataBase Sys",
+        "CS_59000_06I: Topics In Data Science",
+        "CS_36400_1: Intro To DataBase Sys",
+        "ACS_57700_1: Know Discovery&Data Mining",
+        "ACS_57700_1: Know Discovery&Data Mining",
+        "ACS_69800_1: Research MS Thesis",
+        "CS_33100_01I: Intro To C++ & OOP",
+        "CS_33100_02I: Intro To C++ & OOP",
+        "CS_36400_1: Intro To DataBase Sys",
+        "CS_36400_2: Intro To DataBase Sys",
+        "CS_45700_1: Introduction To Data Mining",
+        "ACS_69800_1: Research MS Thesis",
+        "CS_59000_10: Topics In Data Mining",
+        "CS_59000_7: Big Data and Cloud Computing",
+        "CS_59000_7: Big Data and Cloud Computing",
+        "CS_36400_1: Intro To DataBase Sys",
+        "ACS_69800_1: Research MS Thesis",
+        "CS_33100_01D: Intro To C++ & OOP",
+        "CS_33100_01I: Intro To C++ & OOP"
+      ],
+      "publications": [
+        {
+          "type": "Conference Proceeding",
+          "authors": "Guzman, A., & Yoo, J. S.",
+          "title": "How Do Socioeconomic Factors Correlate to COVID-19 Cases and Deaths?",
+          "event": "2021 DATA ANALYTICS",
+          "year": 2021
+        }
+      ],
+      "presentations": [
+        {
+          "presenter": "Guzman, A.",
+          "supervisor": "Yoo, J.",
+          "event": "2021 DATA ANALYTICS International Conference",
+          "title": "How Do Socioeconomic Factors Correlate to COVID-19 Cases and Deaths?",
+          "date": "October 2021"
+        },
+        {
+          "presenter": "Guzman, A.",
+          "supervisor": "Yoo, J.",
+          "event": "2021 PFW Student Research & Creative Endeavor Symposium",
+          "title": "How Do Socioeconomic Factors Correlate to COVID-19 Cases and Deaths?",
+          "location": "PFW",
+          "date": "March 2021"
+        }
+      ]
+    }
+  ]
+}

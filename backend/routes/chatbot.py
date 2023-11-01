@@ -1,9 +1,10 @@
 from flask import Blueprint, request
 from flask_cors import cross_origin
 
-from services.chatbot import chat as cbchat
+from backend.services.chatbot import chat as cbchat
 
 chatbot_bp = Blueprint('chatbot_bp', __name__)
+
 
 @cross_origin
 @chatbot_bp.route('/v1/chatbot/chat', methods=['POST'])
