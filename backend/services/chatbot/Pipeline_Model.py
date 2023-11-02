@@ -4,13 +4,12 @@ from transformers import pipeline
 
 train_output: (Callable | None) = None
 
-
 def train(model_id="deepset/tinyroberta-squad2"):
     global train_output
     train_output = pipeline("question-answering", model=model_id)
 
 
-def test(question, data_file="backend/resources/faculty_data.txt", max_answer_len=50):
+def test(question, data_file="D:/projects/PFW/590_DL/PFW_ChatBot/backend/resources/faculty_data.txt", max_answer_len=50):
     with open(data_file, 'r') as file:
         context = file.read()
 
@@ -18,6 +17,7 @@ def test(question, data_file="backend/resources/faculty_data.txt", max_answer_le
 
     return answer['answer']
 
+train()
 # #Examples
 # tqa=train("deepset/tinyroberta-squad2")
 # test("faculty_data.txt",50,tqa)
