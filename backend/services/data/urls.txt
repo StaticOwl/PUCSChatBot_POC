@@ -4,3 +4,46 @@ https://www.pfw.edu/about-pfw/who-we-are/directories/zesheng-chen#Education || S
 https://www.pfw.edu/about-pfw/who-we-are/directories/zesheng-chen#Courses || ShortLink || profile
 https://www.pfw.edu/about-pfw/who-we-are/directories/zesheng-chen#Publications || ShortLink || profile
 https://www.pfw.edu/about-pfw/who-we-are/directories/zesheng-chen#Presentations || ShortLink || profile
+https://www.pfw.edu/about-pfw/who-we-are/directories/peter-ng#Biography || ShortLink || profile
+https://www.pfw.edu/about-pfw/who-we-are/directories/peter-ng#Education || ShortLink || profile
+https://www.pfw.edu/about-pfw/who-we-are/directories/peter-ng#Courses || ShortLink || profile
+https://www.pfw.edu/about-pfw/who-we-are/directories/peter-ng#BPublications || ShortLink || profile
+https://www.pfw.edu/about-pfw/who-we-are/directories/jon-rusert#Biography || ShortLink || profile
+https://www.pfw.edu/about-pfw/who-we-are/directories/jon-rusert#Education || ShortLink || profile
+https://www.pfw.edu/about-pfw/who-we-are/directories/jon-rusert#Courses || ShortLink || profile
+https://www.pfw.edu/about-pfw/who-we-are/directories/jon-rusert#Publications || ShortLink || profile
+https://www.pfw.edu/about-pfw/who-we-are/directories/jin-soung-yoo#Biography || ShortLink || profile
+https://www.pfw.edu/about-pfw/who-we-are/directories/jin-soung-yoo#Education || ShortLink || profile
+https://www.pfw.edu/about-pfw/who-we-are/directories/jin-soung-yoo#Courses || ShortLink || profile
+https://www.pfw.edu/about-pfw/who-we-are/directories/jin-soung-yoo#Publications || ShortLink || profile
+https://www.pfw.edu/about-pfw/who-we-are/directories/beomjin-kim#Biography || ShortLink || profile
+https://www.pfw.edu/about-pfw/who-we-are/directories/beomjin-kim#Education || ShortLink || profile
+https://www.pfw.edu/about-pfw/who-we-are/directories/beomjin-kim#Courses || ShortLink || profile
+https://www.pfw.edu/about-pfw/who-we-are/directories/beomjin-kim#Publications || ShortLink || profile
+https://www.pfw.edu/about-pfw/who-we-are/directories/beomjin-kim#Presentations || ShortLink || profile
+https://www.pfw.edu/about-pfw/who-we-are/directories/jay-johns#Biography || ShortLink || profile
+https://www.pfw.edu/about-pfw/who-we-are/directories/jay-johns#Education || ShortLink || profile
+https://www.pfw.edu/about-pfw/who-we-are/directories/jay-johns#Courses || ShortLink || profile
+https://www.pfw.edu/about-pfw/who-we-are/directories/jay-johns#Publications || ShortLink || profile
+https://www.pfw.edu/about-pfw/who-we-are/directories/jay-johns#Presentations || ShortLink || profile
+https://www.pfw.edu/about-pfw/who-we-are/directories/haytham-idriss#Biography || ShortLink || profile
+https://www.pfw.edu/about-pfw/who-we-are/directories/haytham-idriss#Education || ShortLink || profile
+https://www.pfw.edu/about-pfw/who-we-are/directories/haytham-idriss#Courses || ShortLink || profile
+https://www.pfw.edu/about-pfw/who-we-are/directories/haytham-idriss#Publications || ShortLink || profile
+https://www.pfw.edu/about-pfw/who-we-are/directories/jacques-chansavang#Biography || ShortLink || profile
+https://www.pfw.edu/about-pfw/who-we-are/directories/jacques-chansavang#Courses || ShortLink || profile
+https://www.pfw.edu/etcs/computer-science/degree-programs || LongLink || courseList
+https://www.pfw.edu/academics-research/majors-minors/computer-science-ba || ShortLink || degreeCourse
+https://www.pfw.edu/academics-research/majors-minors/computer-science-bs || ShortLink || degreeCourse
+https://www.pfw.edu/academics-research/majors-minors/information-systems-bs || ShortLink || degreeCourse
+https://www.pfw.edu/academics-research/majors-minors/computer-science-dual-degree-bs-ms || ShortLink || degreeCourse
+https://www.pfw.edu/academics-research/majors-minors/computer-science-ms || ShortLink || degreeCourse
+https://www.pfw.edu/academics-research/majors-minors/information-systems || ShortLink || degreeCourse
+https://www.pfw.edu/academics-research/majors-minors/computer-science-minor || ShortLink || degreeCourse
+https://www.pfw.edu/academics-research/majors-minors/information-systems-minor || ShortLink || degreeCourse
+https://www.pfw.edu/etcs/computer-science/beyond-classroom || LongLink || studentOrgList
+https://www.pfw.edu/etcs/computer-science/senior-design-capstone-projects || LongLink || capstoneProjectTeams
+https://www.pfw.edu/etcs/computer-science/summer-computing-camp-2023 || ShortLink || summerComputingCamp2023
+https://www.pfw.edu/etcs/computer-science/about-us || ShortLink ||
+https://www.pfw.edu/etcs/student-success-center || ShortLink ||
+https://www.pfw.edu/etcs/student-success-center#help-corner || LongLink
