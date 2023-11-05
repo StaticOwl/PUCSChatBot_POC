@@ -1,0 +1,6 @@
+https://www.pfw.edu/etcs/computer-science/faculty-and-staff || LongLink || facultyList
+https://www.pfw.edu/about-pfw/who-we-are/directories/zesheng-chen#Biography || ShortLink || profile
+https://www.pfw.edu/about-pfw/who-we-are/directories/zesheng-chen#Education || ShortLink || profile
+https://www.pfw.edu/about-pfw/who-we-are/directories/zesheng-chen#Courses || ShortLink || profile
+https://www.pfw.edu/about-pfw/who-we-are/directories/zesheng-chen#Publications || ShortLink || profile
+https://www.pfw.edu/about-pfw/who-we-are/directories/zesheng-chen#Presentations || ShortLink || profile
