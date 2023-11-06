@@ -1,4 +1,4 @@
-name: Backend Test
+name: UI Test
 run-name: ${{ github.actor }} is testing frontend working or not 🚀
 on: [push]
 
