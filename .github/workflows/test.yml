@@ -1,6 +1,6 @@
 name: UI Test
 run-name: ${{ github.actor }} is testing frontend working or not 🚀
-on: [ push ]
+on: [ push, workflow_dispatch ]
 
 jobs:
   ui_test:
