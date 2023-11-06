@@ -28,6 +28,9 @@ jobs:
         uses: actions/setup-python@v3
         with:
           python-version: ${{ matrix.python-version }}
+      - name: Updating Path
+        run: |
+          echo "PYTHONPATH=$PYTHONPATH:./" >> $GITHUB_ENV
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
