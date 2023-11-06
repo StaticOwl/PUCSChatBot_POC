@@ -38,3 +38,7 @@ jobs:
 
   deploy:
     needs: [ui_test, backend_test]
+    runs-on: ubuntu-latest
+    steps:
+        - name: Success
+          run: echo "Success"
