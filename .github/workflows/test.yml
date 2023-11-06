@@ -36,5 +36,5 @@ jobs:
         run: |
           pylint $(git ls-files '*.py')
 
-    deploy:
-      needs: [ui_test, backend_test]
+  deploy:
+    needs: [ui_test, backend_test]
