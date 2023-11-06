@@ -13,7 +13,7 @@ jobs:
         with:
           node-version: 12.x
       - name: Go to Directory
-        run: cd frontend/pfw_chatbot/
+        run: cd ./frontend/pfw_chatbot/
       - name: list files
         run: ls
       - name: Install dependencies
