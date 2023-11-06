@@ -28,18 +28,11 @@ jobs:
         uses: actions/setup-python@v3
         with:
           python-version: ${{ matrix.python-version }}
-      - name: Updating Path
-        run: |
-          echo "PYTHONPATH=${PWD}/backend" >> $GITHUB_ENV
-      - name: Check Python path
-        run: |
-          printf '%s\n' "$PYTHONPATH"
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install pylint
-          pip install keyboard
-          cd backend && python app.py -s
+          cat requirements.txt | xargs -n 1 pip install
       - name: Analysing the code with pylint
         run: |
           pylint $(git ls-files '*.py')
