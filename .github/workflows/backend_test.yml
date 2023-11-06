@@ -12,11 +12,7 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 12.x
-      - name: Go to Directory
-        run: cd ./frontend/pfw_chatbot/
-      - name: list files
-        run: ls
       - name: Install dependencies
-        run: npm install
+        run: cd frontend/pfw_chatbot/ && npm install
       - name: Test
         run: npm test
