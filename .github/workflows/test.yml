@@ -1,5 +1,5 @@
-name: UI Test
-run-name: ${{ github.actor }} is testing frontend working or not 🚀
+name: Chatbot Testing
+run-name: ${{ github.actor }} is testing bot is working or not 🚀
 on: [ push, workflow_dispatch ]
 
 jobs:
