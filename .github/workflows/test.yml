@@ -30,7 +30,7 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - name: Updating Path
         run: |
-          echo "PYTHONPATH=$PYTHONPATH:./" >> $GITHUB_ENV
+          echo "PYTHONPATH=pfw_chatbot/backend" >> $GITHUB_ENV
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
