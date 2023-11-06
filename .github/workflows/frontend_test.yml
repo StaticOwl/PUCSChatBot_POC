@@ -1,5 +1,5 @@
 name: Backend Test
-run-name: ${{ github.actor }} is testing backend working or not 🚀
+run-name: ${{ github.actor }} is testing frontend working or not 🚀
 on: [push]
 
 jobs:
@@ -15,4 +15,4 @@ jobs:
       - name: Install dependencies
         run: cd frontend/pfw_chatbot/ && npm install
       - name: Test
-        run: npm test
+        run: cd frontend/pfw_chatbot/ && npm test
