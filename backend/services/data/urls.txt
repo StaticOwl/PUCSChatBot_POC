@@ -46,4 +46,7 @@ https://www.pfw.edu/etcs/computer-science/senior-design-capstone-projects || Lon
 https://www.pfw.edu/etcs/computer-science/summer-computing-camp-2023 || ShortLink || summerComputingCamp2023
 https://www.pfw.edu/etcs/computer-science/about-us || ShortLink ||
 https://www.pfw.edu/etcs/student-success-center || ShortLink ||
-https://www.pfw.edu/etcs/student-success-center#help-corner || LongLink
+https://www.pfw.edu/etcs/student-success-center#help-corner || LongLink || profile
+https://www.pfw.edu/etcs/student-success-center#lead || ShortLink ||
+https://www.pfw.edu/etcs/student-success-center#etcs-peer-support || ShortLink ||
+https://www.pfw.edu/etcs/student-success-center##etcs-advising || ShortLink
