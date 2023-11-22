@@ -1,0 +1,29 @@
+{
+  "profile": {
+    "locator" : "div[class='dm-profile-sections']",
+    "ignore_words" : "",
+    "textify" : {
+      "title" : "{title}: \n",
+      "biography" : "{biography}\n",
+      "education" : "{title} has completed the following degree programs: {education}\n",
+      "courses" : "{title} teaches the following courses: {courses}\n",
+      "publications" : "{title} has published the following publications: {publications}\n",
+      "presentations" : "{title} has presented the following presentations: {presentations}\n"
+    },
+    "text_config_type": "single"
+  },
+  "facultyList": {
+    "locator" : "div[class='people--grid_item border-b-1 border-gray-800 mb-6']",
+    "ignore_words" : ["VIEW FULL BIO"],
+    "textify" : {
+      "count" : "There are {count} faculties in the Purdue Fort Wayne Computer Science Department.\n",
+      "facultylist_iter" : "{facultylist_iter}\n"
+    },
+    "text_config_type": "multi"
+  },
+  "degreeCourse": {
+    "locator": "div[class='overflow-hidden max-w-screen']",
+    "ignore_words" : "",
+    "text_config_type": "multi"
+  }
+}

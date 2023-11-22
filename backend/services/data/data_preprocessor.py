@@ -1,5 +1,5 @@
-import json
 import os
+from backend.utils.data_utils import update_keys_with_substring, insert_newline
 
 
 def update_json_structure(json_data):
@@ -14,6 +14,8 @@ def update_json_structure(json_data):
             if data_dict:
                 updated_json.append(data_dict)
             data_dict = {'title': data['title'].strip(), 'type': data['type'].strip()}
+            if 'count' in data:
+                data_dict['count'] = data['count']
             data_key.append((data['title'], data['type']))
 
         context_data = data['context'].split(" ")
@@ -21,34 +23,24 @@ def update_json_structure(json_data):
         new_value = " ".join(context_data[1:])
         data_dict[new_key] = new_value.replace('\n', '')
 
-    print(updated_json)
     return updated_json
 
 
-def insert_newline(sentence, max_chars=500):
-    words = sentence.split()
-    current_line = ''
-    result = ''
-
-    for word in words:
-        if len(current_line + word) <= max_chars:
-            current_line += word + ' '
-        else:
-            result += current_line.strip() + '\n'
-            current_line = word + ' '
-
-    # Add the last line
-    result += current_line.strip()
-
-    return result
-
-
-def textify_data(big_data, config: dict = None):
-    big_content = ""
+def textify_data(big_data, configs: dict = None):
+    content = ""
     for data in big_data:
-        content = """{title}: """.format(
-            title=data['title'])
-        big_content += content
+        data_type = data['type']
+        config = configs.get(data_type).get('textify')
+        text_config_type = configs.get(data_type).get('text_config_type')
+        if text_config_type == 'multi':
+            count = int(data['count'])
+            for i in range(count):
+                config = update_keys_with_substring(config, 'iter', str(i))
+        for key, value in data.items():
+            if key in config:
+                content += config[key].format(**data)
 
-    with open('para_faculty_data.txt', 'w+') as f:
-        f.write(big_content)
+        content += "\n\n"
+
+    with open(os.getenv("TRAINING_CONTEXT"), 'w+') as f:
+        f.write(insert_newline(content))

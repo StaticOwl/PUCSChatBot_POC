@@ -7,7 +7,7 @@ import os
 import shutil
 import asyncio
 from playwright.async_api import async_playwright, Playwright
-from services.data.data_preprocessor import update_json_structure, textify_data
+from .data_preprocessor import update_json_structure, textify_data
 
 dataset = []
 
@@ -22,7 +22,7 @@ async def scrape(playwright: Playwright, url: str, locator_config: dict = None):
     url_link = url_set[0].strip()
     url_content = url_set[1].strip() if len(url_set) > 1 else None
     try:
-        await page.goto(url_link, timeout=5000)
+        await page.goto(url_link, timeout=50000)
         await page.evaluate('''
             document.querySelectorAll('[x-data]').forEach((element) => {
                 element.removeAttribute('x-data');
@@ -54,6 +54,12 @@ async def scrape(playwright: Playwright, url: str, locator_config: dict = None):
                                    .replace(' – ', '_')
                                    .replace('—', '')
                                    .replace('●', '')
+                                   .replace('–', '-')
+                                   .replace("“", "\"")
+                                   .replace("’", "'")
+                                   .replace("”", "\"")
+                                   .replace("‘", "'")
+                                   .replace("é", "e")
                                    .strip())
 
                 temp_dataset.append(data.copy())
@@ -92,8 +98,7 @@ def run():
 
     # Update the json structure
     result = update_json_structure(result)
-    textify_data(result, locator_config)  # Not fully Implemented
-
-    # Save the result (Temporary)
     with open(os.getenv("SCRAPPING_PATH_NEW"), "w") as output:
         json.dump(result, output, indent=4)
+
+    textify_data(result, locator_config)  # Not fully Implemented
