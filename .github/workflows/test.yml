@@ -35,7 +35,9 @@ jobs:
           cat requirements.txt | xargs -n 1 pip install || true
       - name: Analysing the code with pylint
         run: |
-          pylint $(git ls-files '*.py') || true
+          pylint \
+          --max-line-length=120 \
+          $(git ls-files '*.py') || true
 
   deploy:
     needs: [ui_test, backend_test]

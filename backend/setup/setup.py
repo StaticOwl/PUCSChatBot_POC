@@ -16,7 +16,8 @@ def check_package(package):
     """
     package_name = package.split('==')[0]
     try:
-        output = subprocess.check_output([sys.executable, "-m", "pip", "show", package_name], stderr=subprocess.STDOUT)
+        output = subprocess.check_output([
+            sys.executable, "-m", "pip", "show", package_name], stderr=subprocess.STDOUT)
         installed_version = None
         for line in output.decode().split('\n'):
             if line.startswith('Version:'):
