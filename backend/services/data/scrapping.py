@@ -2,14 +2,33 @@
 mentioned in the urls.txt file. The data is going to be stored in the runtime folder.
 I am going to use playwright async for loading the webpages, and then I am going to
 use the selectors to get the data from the webpages."""
+import asyncio
 import json
 import os
 import shutil
-import asyncio
+
 from playwright.async_api import async_playwright, Playwright
+
 from .data_preprocessor import update_json_structure, textify_data
+from backend.utils.data_utils import safe_replace
 
 dataset = []
+
+replacements = {
+    "\n": " ",
+    " – ": "-",
+    "—": "-",
+    "●": "*",
+    "–": "-",
+    "“": "\"",
+    "’": "'",
+    "”": "\"",
+    "‘": "'",
+    "é": "e",
+    "™": "",
+    " ": "",
+
+}
 
 
 async def scrape(playwright: Playwright, url: str, locator_config: dict = None):
@@ -30,39 +49,35 @@ async def scrape(playwright: Playwright, url: str, locator_config: dict = None):
         ''')
         page_title = await page.title()
         page_title = page_title.split('|')
-
-        print(f"Page Title: {page_title[0]}")
         flag = not any(element in page_title[0] for element in strict_no_elements)
-        config = locator_config.get(url_content)
-        if flag and url_content is not None:
-            site_main_element = page.locator(config.get('locator'))
-            site_main_element_count = await site_main_element.count()
-            data['title'] = page_title[0]
+        if flag and url_content is not None and url_content in locator_config:
+            print(f"Page Title: {page_title[0]}")
+            config = locator_config.get(url_content)
+            context_appender: str = ""
+            locators = config.get('locator')
+            title_replacements = config.get('title_replacer')
+            data['title'] = safe_replace(safe_replace(page_title[0], replacements), title_replacements).strip()
             data['type'] = url_content
             ignore_words = config.get('ignore_words')
-            if site_main_element_count > 1:
-                data['count'] = str(site_main_element_count)
-            for i in range(site_main_element_count):
-                site_main_element_ith = site_main_element.nth(i)
-                site_main_content = await site_main_element_ith.inner_text()
-                if len(ignore_words) > 0:
-                    for word in ignore_words:
-                        site_main_content = site_main_content.replace(word, '')
-                data['context'] = ((url_content + "_" + str(i) + " " if site_main_element_count > 1 else "") +
-                                   site_main_content
-                                   .replace('\n', ' ')
-                                   .replace(' – ', '_')
-                                   .replace('—', '')
-                                   .replace('●', '')
-                                   .replace('–', '-')
-                                   .replace("“", "\"")
-                                   .replace("’", "'")
-                                   .replace("”", "\"")
-                                   .replace("‘", "'")
-                                   .replace("é", "e")
-                                   .strip())
+            for locator in locators:
+                if len(locator.split("->")) > 1:
+                    locator, context_appender = locator.split("->")
+                site_main_element = page.locator(locator)
+                site_main_element_count = await site_main_element.count()
+                if site_main_element_count > 1:
+                    data['count'] = str(site_main_element_count)
+                for i in range(site_main_element_count):
+                    site_main_element_ith = site_main_element.nth(i)
+                    site_main_content = await site_main_element_ith.inner_text()
+                    if len(ignore_words) > 0:
+                        for word in ignore_words:
+                            site_main_content = site_main_content.replace(word, '')
+                    data['context'] = (context_appender +
+                                       ("_" + str(i) + " " if site_main_element_count > 1 else "") +
+                                       (" " if context_appender != "" else "") +
+                                       safe_replace(site_main_content, replacements).strip())
 
-                temp_dataset.append(data.copy())
+                    temp_dataset.append(data.copy())
         await browser.close()
         return temp_dataset
     except Exception as r:

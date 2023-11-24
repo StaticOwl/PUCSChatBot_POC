@@ -43,4 +43,4 @@ def textify_data(big_data, configs: dict = None):
         content += "\n\n"
 
     with open(os.getenv("TRAINING_CONTEXT"), 'w+') as f:
-        f.write(insert_newline(content))
+        f.write(insert_newline(content, int(os.getenv("MAX_CHARS"))))

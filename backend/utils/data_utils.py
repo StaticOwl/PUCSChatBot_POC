@@ -8,6 +8,7 @@ def update_keys_with_substring(data, substring, new_value):
 
     return updated_data
 
+
 def insert_newline(sentence, max_chars=500):
     lines = sentence.split('\n')
     result = []
@@ -27,3 +28,10 @@ def insert_newline(sentence, max_chars=500):
         result.append(current_line.strip())
 
     return '\n'.join(result)
+
+
+def safe_replace(string, replacement: dict = None):
+    if replacement is not None:
+        for k, v in replacement.items():
+            string = string.replace(k, v)
+    return string
