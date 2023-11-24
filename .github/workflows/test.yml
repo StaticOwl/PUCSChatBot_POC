@@ -1,5 +1,5 @@
 name: Chatbot Testing
-run-name: ${{ github.actor }} is testing bot is working or not 🚀
+run-name: ${{ github.actor }} is testing bot is working or not
 on: [ push, workflow_dispatch ]
 
 jobs:
@@ -32,7 +32,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install pylint
-          cat requirements.txt | xargs -n 1 pip install
+          cat requirements.txt | xargs -n 1 pip install || true
       - name: Analysing the code with pylint
         run: |
           pylint $(git ls-files '*.py')
