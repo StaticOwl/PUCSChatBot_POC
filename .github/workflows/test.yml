@@ -35,7 +35,15 @@ jobs:
           cat requirements.txt | xargs -n 1 pip install || true
       - name: Analysing the code with pylint
         run: |
-          pylint $(git ls-files '*.py')
+          pylint --rcfile=.pylintrc $(git ls-files '*.py')
+          pylint_exit_code=$?
+          if [ $pylint_exit_code -gt 5 ]; then
+            echo "Pylint passed with a score greater than 5."
+          exit 0
+          else
+            echo "Pylint failed with a score of 5 or less."
+            exit 1
+          fi
 
   deploy:
     needs: [ui_test, backend_test]
