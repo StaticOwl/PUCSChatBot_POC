@@ -1,9 +1,20 @@
+"""
+This script is going to be used for processing the data that is scrapped from the webpages.
+"""
+
 import os
 
 from backend.utils.data_utils import update_keys_with_substring, insert_newline
 
 
 def update_json_structure(json_data):
+    """
+    This method updated the json structure of the scrapped data.
+    It restructures the scrapped data so that it gives off an output which is properly structured in a dictionary format.
+    It also updates the key value pairs which are required to be maintained.
+    :param json_data: The scrapped data in the form of a list of title and context.
+    :return: The updated json data in the form of a list of dictionaries.
+    """
     if json_data[-1]['title'] == 'dummy':
         json_data['scrapped_data'].pop(-1)
     updated_json = []
@@ -28,6 +39,12 @@ def update_json_structure(json_data):
 
 
 def textify_data(big_data, configs: dict = None):
+    """
+    This method is used to convert the scrapped data into a text format.
+    :param big_data: restructured json data created from scrapped data.
+    :param configs: config.json file which contains the textify and text_config_type keys.
+    :return: It writes a fle in the runtime folder which contains the textified data.
+    """
     content = ""
     for data in big_data:
         data_type = data['type']
@@ -44,4 +61,4 @@ def textify_data(big_data, configs: dict = None):
         content += "\n\n"
 
     with open(os.getenv("TRAINING_CONTEXT"), 'w+') as f:
-        f.write(insert_newline(content, int(os.getenv("MAX_CHARS"))))
+        f.write(insert_newline(content, int(os.getenv("PALM_API_MAX_CHARS"))))
