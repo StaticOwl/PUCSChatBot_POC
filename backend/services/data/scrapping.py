@@ -9,8 +9,8 @@ import shutil
 
 from playwright.async_api import async_playwright, Playwright
 
-from .data_preprocessor import update_json_structure, textify_data
 from backend.utils.data_utils import safe_replace
+from .data_preprocessor import update_json_structure, textify_data
 
 dataset = []
 
