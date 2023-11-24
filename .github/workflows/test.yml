@@ -35,7 +35,7 @@ jobs:
           cat requirements.txt | xargs -n 1 pip install || true
       - name: Analysing the code with pylint
         run: |
-          pylint --rcfile=.pylintrc $(git ls-files '*.py')
+          pylint $(git ls-files '*.py')
           pylint_exit_code=$?
           if [ $pylint_exit_code -gt 5 ]; then
             echo "Pylint passed with a score greater than 5."
