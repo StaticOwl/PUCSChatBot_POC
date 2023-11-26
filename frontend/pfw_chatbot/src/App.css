@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  align-items: center;
 }
 
 .App-logo {
@@ -36,15 +37,14 @@
     transform: rotate(360deg);
   }
 }
-
-.ChatBox {
+.ChatButton {
   position: fixed;
-  bottom: 1em;
-  right: 1em;
-  height: 35em;
-  width: 30em;
-  background: #dad38c;
-  padding: 10px;
-  border-radius: 20px;
-  border: 5px solid black;
+  bottom: 2em;
+  right: 2em;
+  color:white;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: black;
+  font-weight: bold;
+  font-size: large;
 }
