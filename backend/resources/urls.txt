@@ -1,0 +1,52 @@
+https://www.pfw.edu/etcs/computer-science/faculty-and-staff || facultyList
+https://www.pfw.edu/about-pfw/who-we-are/directories/zesheng-chen#Biography || profile
+https://www.pfw.edu/about-pfw/who-we-are/directories/zesheng-chen#Education || profile
+https://www.pfw.edu/about-pfw/who-we-are/directories/zesheng-chen#Courses || profile
+https://www.pfw.edu/about-pfw/who-we-are/directories/zesheng-chen#Publications || profile
+https://www.pfw.edu/about-pfw/who-we-are/directories/zesheng-chen#Presentations || profile
+https://www.pfw.edu/about-pfw/who-we-are/directories/peter-ng#Biography || profile
+https://www.pfw.edu/about-pfw/who-we-are/directories/peter-ng#Education || profile
+https://www.pfw.edu/about-pfw/who-we-are/directories/peter-ng#Courses || profile
+https://www.pfw.edu/about-pfw/who-we-are/directories/peter-ng#Publications || profile
+https://www.pfw.edu/about-pfw/who-we-are/directories/jon-rusert#Biography || profile
+https://www.pfw.edu/about-pfw/who-we-are/directories/jon-rusert#Education || profile
+https://www.pfw.edu/about-pfw/who-we-are/directories/jon-rusert#Courses || profile
+https://www.pfw.edu/about-pfw/who-we-are/directories/jon-rusert#Publications || profile
+https://www.pfw.edu/about-pfw/who-we-are/directories/jin-soung-yoo#Biography || profile
+https://www.pfw.edu/about-pfw/who-we-are/directories/jin-soung-yoo#Education || profile
+https://www.pfw.edu/about-pfw/who-we-are/directories/jin-soung-yoo#Courses || profile
+https://www.pfw.edu/about-pfw/who-we-are/directories/jin-soung-yoo#Publications || profile
+https://www.pfw.edu/about-pfw/who-we-are/directories/beomjin-kim#Biography || profile
+https://www.pfw.edu/about-pfw/who-we-are/directories/beomjin-kim#Education || profile
+https://www.pfw.edu/about-pfw/who-we-are/directories/beomjin-kim#Courses || profile
+https://www.pfw.edu/about-pfw/who-we-are/directories/beomjin-kim#Publications || profile
+https://www.pfw.edu/about-pfw/who-we-are/directories/beomjin-kim#Presentations || profile
+https://www.pfw.edu/about-pfw/who-we-are/directories/jay-johns#Biography || profile
+https://www.pfw.edu/about-pfw/who-we-are/directories/jay-johns#Education || profile
+https://www.pfw.edu/about-pfw/who-we-are/directories/jay-johns#Courses || profile
+https://www.pfw.edu/about-pfw/who-we-are/directories/jay-johns#Publications || profile
+https://www.pfw.edu/about-pfw/who-we-are/directories/jay-johns#Presentations || profile
+https://www.pfw.edu/about-pfw/who-we-are/directories/haytham-idriss#Biography || profile
+https://www.pfw.edu/about-pfw/who-we-are/directories/haytham-idriss#Education || profile
+https://www.pfw.edu/about-pfw/who-we-are/directories/haytham-idriss#Courses || profile
+https://www.pfw.edu/about-pfw/who-we-are/directories/haytham-idriss#Publications || profile
+https://www.pfw.edu/about-pfw/who-we-are/directories/jacques-chansavang#Biography || profile
+https://www.pfw.edu/about-pfw/who-we-are/directories/jacques-chansavang#Courses || profile
+https://www.pfw.edu/etcs/computer-science/degree-programs || courseList
+https://www.pfw.edu/academics-research/majors-minors/computer-science-ba || degreeCourse
+https://www.pfw.edu/academics-research/majors-minors/computer-science-bs || degreeCourse
+https://www.pfw.edu/academics-research/majors-minors/information-systems-bs || degreeCourse
+https://www.pfw.edu/academics-research/majors-minors/computer-science-dual-degree-bs-ms || degreeCourse
+https://www.pfw.edu/academics-research/majors-minors/computer-science-ms || degreeCourse
+https://www.pfw.edu/academics-research/majors-minors/information-systems || degreeCourse
+https://www.pfw.edu/academics-research/majors-minors/computer-science-minor || degreeCourse
+https://www.pfw.edu/academics-research/majors-minors/information-systems-minor || degreeCourse
+https://www.pfw.edu/etcs/computer-science/beyond-classroom || studentOrgList
+https://www.pfw.edu/etcs/computer-science/senior-design-capstone-projects || capstoneProjectTeams
+https://www.pfw.edu/etcs/computer-science/summer-computing-camp-2023 || summerComputingCamp2023
+https://www.pfw.edu/etcs/computer-science/about-us ||
+https://www.pfw.edu/etcs/student-success-center ||
+https://www.pfw.edu/etcs/student-success-center#help-corner || profile
+https://www.pfw.edu/etcs/student-success-center#lead || profile
+https://www.pfw.edu/etcs/student-success-center#etcs-peer-support ||
+https://www.pfw.edu/etcs/student-success-center##etcs-advising ||

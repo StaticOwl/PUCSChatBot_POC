@@ -1,0 +1,45 @@
+name: Chatbot Testing
+run-name: ${{ github.actor }} is testing bot is working or not 🚀
+on: [ push, workflow_dispatch ]
+
+jobs:
+  ui_test:
+    name: FrontEnd Test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+      - name: Install dependencies
+        run: cd frontend/pfw_chatbot/ && npm install
+      - name: Test
+        run: cd frontend/pfw_chatbot/ && npm test
+
+  backend_test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [ "3.9", "3.10" ]
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v3
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pylint
+          cat requirements.txt | xargs -n 1 pip install
+      - name: Analysing the code with pylint
+        run: |
+          pylint $(git ls-files '*.py')
+
+  deploy:
+    needs: [ui_test, backend_test]
+    runs-on: ubuntu-latest
+    steps:
+        - name: Success
+          run: echo "Success"
