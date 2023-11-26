@@ -47,6 +47,7 @@ https://catalog.pfw.edu/preview_program.php?catoid=62&poid=16211 || degreeCourse
 https://catalog.pfw.edu/preview_program.php?catoid=62&poid=16095 || degreeCourse
 https://catalog.pfw.edu/preview_program.php?catoid=62&poid=16263 || degreeCourse
 https://catalog.pfw.edu/preview_program.php?catoid=62&poid=16093 || degreeCourse
+https://catalog.pfw.edu/preview_program.php?catoid=63&poid=16993 || degreeCourse
 https://www.pfw.edu/etcs/computer-science/beyond-classroom || studentOrgList
 https://www.pfw.edu/etcs/computer-science/senior-design-capstone-projects || capstoneProjectTeams
 https://www.pfw.edu/etcs/computer-science/summer-computing-camp-2023 || summerComputingCamp2023
