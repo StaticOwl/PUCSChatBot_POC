@@ -3,11 +3,15 @@ import axios from "axios";
 import "./ChatUI.css";
 
 const ChatUI = () => {
+  // Keep track of all messages
   const [messages, setMessages] = useState([
     { text: "Hello, how can I help you?", sender: "bot" },
     { text: "Hi there!", sender: "user" },
   ]);
+  // Keep track of contents of input form
   const [newMessage, setNewMessage] = useState("");
+
+  // Used to scroll down to last message
   const containerRef = useRef(null);
   useEffect(() => {
     if (containerRef && containerRef.current) {
@@ -19,6 +23,8 @@ const ChatUI = () => {
       });
     }
   }, [containerRef, messages]);
+
+  // Handles appending of user input to chat followed by getting response from server
   const handleSendMessage = () => {
     if (newMessage.trim() === "") return;
     const updatedMessages = [
@@ -39,7 +45,7 @@ const ChatUI = () => {
     })
     .then(function (err) {console.log(err);})
   };
-
+  // Render the UI
   return (
     <div className="chat-ui">
       <div className="chat-window">
