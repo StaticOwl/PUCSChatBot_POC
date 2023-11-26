@@ -21,23 +21,24 @@ const ChatUI = () => {
   }, [containerRef, messages]);
   const handleSendMessage = () => {
     if (newMessage.trim() === '') return;
-    const updatedMessages = [...messages, { text: newMessage, sender: 'user' }];
+    const updatedMessages = [...messages, { text: newMessage, sender: 'user' }, {text: 'Standard response', sender: 'bot'}];
     setMessages(updatedMessages);
     setNewMessage('');
     //Receive reply from server
-    axios.post('http://127.0.0.1:5000/v1/chatbot/chat', {
-      user_msg: newMessage,
-    })
-    .then(function (res) {
-      console.log(res);
-      const updatedMessagesWithRes = [...messages, { text: newMessage, sender: 'user' },{text: res.data.response, sender: 'bot'}];
-      setMessages(updatedMessagesWithRes);
-    })
-    .then(function (err) {console.log(err);})
+    // axios.post('http://127.0.0.1:5000/v1/chatbot/chat', {
+    //   user_msg: newMessage,
+    // })
+    // .then(function (res) {
+    //   console.log(res);
+    //   const updatedMessagesWithRes = [...messages, { text: newMessage, sender: 'user' },{text: res.data.response, sender: 'bot'}];
+    //   setMessages(updatedMessagesWithRes);
+    // })
+    // .then(function (err) {console.log(err);})
   };
 
   return (
     <div className="chat-ui">
+      <div className="chat-bubble"></div>
       <div className="chat-window">
         <div className="messages-container" ref={containerRef}>
         {messages.map((message, index) => (
