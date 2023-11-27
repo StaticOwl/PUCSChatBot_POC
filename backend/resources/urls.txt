@@ -52,7 +52,7 @@ https://www.pfw.edu/etcs/computer-science/senior-design-capstone-projects || cap
 https://www.pfw.edu/etcs/computer-science/summer-computing-camp-2023 || summerComputingCamp2023
 https://www.pfw.edu/etcs/computer-science/about-us ||
 https://www.pfw.edu/etcs/student-success-center ||
-https://www.pfw.edu/etcs/student-success-center#help-corner || profile
-https://www.pfw.edu/etcs/student-success-center#lead || profile
+https://www.pfw.edu/etcs/student-success-center#help-corner || helpDesk
+https://www.pfw.edu/etcs/student-success-center#lead || helpDesk
 https://www.pfw.edu/etcs/student-success-center#etcs-peer-support ||
 https://www.pfw.edu/etcs/student-success-center##etcs-advising ||
