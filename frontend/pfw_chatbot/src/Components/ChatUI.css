@@ -1,21 +1,25 @@
 .chat-window {
     overflow-y: scroll;
-    position:relative;
     font-size: large;
+}
+
+.chat-ui {
+    position: relative;
 }
 .input-box {
     position: absolute;
-    bottom: 1em;
+    bottom: 1em;    
     width: 100%;
     text-align: left;
 }
 .input-form {
-    width: 80%;
+    width: 85%;
     padding: 10px 5px 10px;
 }
 .messages-container{
     height: 28em;
     overflow-y: scroll;
+    margin-bottom: 3.5em;
 }
 .message {
     border: 2px solid black;
