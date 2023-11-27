@@ -32,7 +32,6 @@ https://www.pfw.edu/about-pfw/who-we-are/directories/haytham-idriss#Courses || p
 https://www.pfw.edu/about-pfw/who-we-are/directories/haytham-idriss#Publications || profile
 https://www.pfw.edu/about-pfw/who-we-are/directories/jacques-chansavang#Biography || profile
 https://www.pfw.edu/about-pfw/who-we-are/directories/jacques-chansavang#Courses || profile
-https://www.pfw.edu/etcs/computer-science/degree-programs || courseList
 https://catalog.pfw.edu/content.php?filter%5B27%5D=CS&filter%5B29%5D=&filter%5Bcourse_type%5D=-1&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=62&expand=&navoid=3408&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter || courseList
 https://catalog.pfw.edu/preview_program.php?catoid=62&poid=16015 || degreeCourse
 https://catalog.pfw.edu/preview_program.php?catoid=62&poid=16017 || degreeCourse
