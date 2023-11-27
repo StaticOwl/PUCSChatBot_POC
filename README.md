@@ -39,3 +39,6 @@ CS59000-03 Group Project for Course
 | Model                         | PreProcessing       | @knsspsj19, @staticowl | []             |
 | API                           | Context             | @dannypz97             | []             |
 | Data                          | Scraping URL List   | All                    | []             |
+| Convert UI to Modal           | Move Chat component | @sanidhyaRsharma       | [x]            |
+| Setting up login/signup       | Login               | @sanidhyaRsharma       | []             |
+| Setting up login/signup       | Sign Up             | @sanidhyaRsharma       | []             |
