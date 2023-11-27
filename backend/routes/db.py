@@ -14,7 +14,7 @@ def test_conn():
 @db_bp.route('/v1/admin/db/setup_test')
 def test_setup():
     result = db.test_setup()
-    return {"users": result}, 200
+    return result, 200
 
 
 @db_bp.route('/v1/admin/db/setup')

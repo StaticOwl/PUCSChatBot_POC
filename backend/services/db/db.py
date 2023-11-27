@@ -12,18 +12,31 @@ def test_conn():
 def test_setup():
     cursor = get_cursor()
     result = cursor.execute("SELECT * from users LIMIT 2;")
-    return {"users": result.fetchall()}
+    users = result.fetchall()
+    result = cursor.execute("SELECT * from chats LIMIT 5;")
+    chats = result.fetchall()
+    return {"users": users, "chats": chats}
 
 
 def setup_database():
     cur = get_cursor()
     cur.execute("""
-        CREATE TABLE users(
+        CREATE TABLE IF NOT EXISTS users(
             id INTEGER PRIMARY KEY,
             name TEXT NOT NULL,
             email TEXT UNIQUE NOT NULL,
             PASSWORD TEXT NOT NULL
         );
+    """)
+    cur.execute("""
+        CREATE TABLE IF NOT EXISTS chats(
+            id INTEGER PRIMARY KEY,
+            user_id,
+            query,
+            response,
+            accuracy,
+            time TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL
+        )
     """)
 
     return True

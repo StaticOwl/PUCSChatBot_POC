@@ -19,9 +19,7 @@ if __name__ == '__main__':
         load_dotenv()
         scrapping.run()
     else:
-        from services.chatbot.pipeline_model import train
         from dotenv import load_dotenv
         from routes.runner import app
         load_dotenv()
-        train()
         app.run()

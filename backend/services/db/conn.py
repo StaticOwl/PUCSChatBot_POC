@@ -1,6 +1,6 @@
 import sqlite3
 
-DB_FILE = './resources/sql.db'
+DB_FILE = './backend/resources/sql.db'
 
 
 def get_conn():
