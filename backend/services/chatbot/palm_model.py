@@ -16,7 +16,21 @@ from langchain.chains.question_answering import load_qa_chain
 import os
 import dill
 
-def train(path_to_data,key):
+DEFAULT_TRAINING_PATH = os.environ['TRAINING_CONTEXT']
+DEFAULT_DB_DILL_PATH = os.environ['DB_DILL_PATH']
+DEFAULT_CHAIN_DILL_PATH = os.environ['CHAIN_DILL_PATH']
+DEFAULT_PALM_THRESHOLD = os.environ['PALM_THRESHOLD']
+NO_RESPONSE_MSG = "No response found."
+REDIRECTION_MSG = "Please visit https://www.pfw.edu/etcs/computer-science for more information.\n You may also reach out to Seula Daily- Director of CS program- at dailys@pfw.edu"
+
+# with open(DEFAULT_DB_DILL_PATH, "rb") as f:
+#     db = dill.load(f)
+# with open(DEFAULT_CHAIN_DILL_PATH, "rb") as f:
+#     chain = dill.load(f)
+
+
+def train(path_to_data=DEFAULT_TRAINING_PATH):
+    global
     loader = TextLoader(path_to_data)
     documents = loader.load()
 
@@ -35,9 +49,6 @@ def train(path_to_data,key):
     )
     texts = text_splitter.split_text(raw_text)
 
-    # Set the GOOGLE_API_KEY environment variable
-    os.environ["GOOGLE_API_KEY"] = key
-
     embeddings = GooglePalmEmbeddings()
     db = FAISS.from_texts(texts,embeddings)
     chain = load_qa_chain(GooglePalm(), chain_type="stuff")
@@ -46,12 +57,10 @@ def train(path_to_data,key):
     # with open("chain.dill", "wb") as f:
     #   dill.dump(chain, f)
 
-    return db,chain
+    return db, chain
 
 
-
-def test(db,chain,threshold):
-
+def test(query, db, chain, threshold):
     while True:
         query = input("Ask a question (type 'exit' to stop): ")
 
@@ -64,13 +73,12 @@ def test(db,chain,threshold):
             result = chain.run(input_documents=docs, question=query).strip()
             updated_query = f"How accurate/relevant is the {query} to the {result}. Just give score between 0 and 1"
             accuracy = chain.run(input_documents=docs, question=updated_query).strip()
-            if float(accuracy)<threshold:
-              print("Please visit https://www.pfw.edu/etcs/computer-science for more information.\n You may also reach out to Seula Daily- Director of CS program- at dailys@pfw.edu")
+            if float(accuracy) < threshold:
+                return REDIRECTION_MSG, accuracy
             else:
-              print(result)
-              print(f"Accuracy:{accuracy}")
+                return result, accuracy
         except (IndexError, AttributeError):
-            print("No response found.")
+            return NO_RESPONSE_MSG
 
 """
 # Usage example:
