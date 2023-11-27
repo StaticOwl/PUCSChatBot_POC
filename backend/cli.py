@@ -1,22 +1,16 @@
-import os
-import dill
+from services.chatbot.palm_model import test
 
-from backend.services.chatbot.palm_model import test
+if __name__ == '__main__':
+    import sys
+    sys.path.append('.')
 
-DEFAULT_THRESHOLD = os.environ['PALM_THRESHOLD']
-DEFAULT_DB_DILL_PATH = 'backend/resources/db.dill'
-DEFAULT_CHAIN_DILL_PATH = 'backend/resources/chain.dill'
 
-with open(DEFAULT_DB_DILL_PATH, "rb") as f:
-    db = dill.load(f)
-with open(DEFAULT_CHAIN_DILL_PATH, "rb") as f:
-    chain = dill.load(f)
+    while True:
+        query = input("Ask a question (type 'exit' to stop): ")
 
-while True:
-    query = input("Ask a question (type 'exit' to stop): ")
+        if query.lower().strip() == 'exit':
+            print("Exiting the loop. Goodbye!")
+            break
 
-    if query.lower().strip() == 'exit':
-        print("Exiting the loop. Goodbye!")
-        break
-
-    test(db, chain, THRESHOLD)
+        response, accuracy = test(query)
+        print(f"{response} <[[accuracy = {accuracy}]]>")
