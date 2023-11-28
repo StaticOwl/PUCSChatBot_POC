@@ -14,7 +14,10 @@ from langchain.vectorstores import FAISS
 from langchain.document_loaders import TextLoader
 from langchain.chains.question_answering import load_qa_chain
 import os
+import traceback
 import dill
+
+from backend.services.db.conn import get_cursor_conn
 
 from dotenv import load_dotenv
 load_dotenv()
@@ -59,17 +62,28 @@ def train(path_to_data=DEFAULT_TRAINING_PATH):
     return DB, CHAIN
 
 
-def test(query, threshold=DEFAULT_PALM_THRESHOLD):
+def test(query, threshold=DEFAULT_PALM_THRESHOLD, **kwargs):
     docs = DB.similarity_search(query)
     try:
         result = CHAIN.run(input_documents=docs, question=query).strip()
         updated_query = f"How accurate/relevant is the {query} to the {result}. Just give score between 0 and 1"
         accuracy = CHAIN.run(input_documents=docs, question=updated_query).strip()
+
+        cursor, conn = get_cursor_conn()
+
+        data = (kwargs.get('user_id'), query, result, accuracy)
+        cursor.execute("""
+                    INSERT INTO chats(user_id, query, response, accuracy) VALUES(?, ?, ?, ?)
+                """, data)
+        conn.commit()
+
         if float(accuracy) < threshold:
             return REDIRECTION_MSG, accuracy
         else:
             return result, accuracy
-    except (IndexError, AttributeError):
+    except (IndexError, AttributeError) as e:
+        print(traceback.format_exc())
+        print()
         return NO_RESPONSE_MSG, 0
 
 

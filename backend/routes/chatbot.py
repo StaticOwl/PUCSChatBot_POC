@@ -10,7 +10,7 @@ chatbot_bp = Blueprint('chatbot_bp', __name__)
 @cross_origin
 @chatbot_bp.route('/v1/chatbot/chat', methods=['POST'])
 def chat():
-    user_id = request.cookies.get(USER_ID_COOKIE)
+    user_id = request.cookies.get(USER_ID_COOKIE, 'N/A')
 
     request_data = request.get_json()
     user_msg = request_data.get('user_msg', '')
