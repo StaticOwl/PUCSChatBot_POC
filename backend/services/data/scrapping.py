@@ -69,7 +69,6 @@ async def scrape(playwright: Playwright, url: str, locator_config: dict = None):
             for locator in locators:
                 if len(locator.split("->")) > 1:
                     locator, context_appender = locator.split("->")
-                await page.wait_for_selector(locator, timeout=5000)
                 site_main_element = page.locator(locator)
                 site_main_element_count = await site_main_element.count()
                 if site_main_element_count > 1:
