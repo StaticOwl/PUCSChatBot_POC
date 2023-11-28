@@ -1,6 +1,9 @@
+import os
 import sqlite3
 
-DB_FILE = './backend/resources/sql.db'
+from dotenv import load_dotenv
+load_dotenv()
+DB_FILE = os.getenv('SQL_DB_FILE')
 
 
 def get_conn():

@@ -22,11 +22,11 @@ from backend.services.db.conn import get_cursor_conn
 from dotenv import load_dotenv
 load_dotenv()
 
-TRAINING_FALLBACK_ENABLED = os.environ.get('TRAINING_FALLBACK_ENABLED', 'false').lower().strip() == 'true'
-DEFAULT_TRAINING_PATH = os.environ['TRAINING_CONTEXT']
-DEFAULT_DB_DILL_PATH = os.environ['DB_DILL_PATH']
-DEFAULT_CHAIN_DILL_PATH = os.environ['CHAIN_DILL_PATH']
-DEFAULT_PALM_THRESHOLD = float(os.environ.get('PALM_THRESHOLD', 0.5))
+TRAINING_FALLBACK_ENABLED = os.getenv('TRAINING_FALLBACK_ENABLED', 'false').lower().strip() == 'true'
+DEFAULT_TRAINING_PATH = os.getenv('TRAINING_CONTEXT')
+DEFAULT_DB_DILL_PATH = os.getenv('DB_DILL_PATH')
+DEFAULT_CHAIN_DILL_PATH = os.getenv('CHAIN_DILL_PATH')
+DEFAULT_PALM_THRESHOLD = float(os.getenv('PALM_THRESHOLD', 0.5))
 NO_RESPONSE_MSG = "No response found."
 REDIRECTION_MSG = "Please visit https://www.pfw.edu/etcs/computer-science for more information.\n You may also reach out to Seula Daily- Director of CS program- at dailys@pfw.edu"
 

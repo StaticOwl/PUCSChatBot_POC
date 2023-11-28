@@ -5,7 +5,7 @@ from transformers import pipeline
 
 train_output: (Callable | None) = None
 
-DEFAULT_TRAINING_PATH = os.environ['TRAINING_CONTEXT']
+DEFAULT_TRAINING_PATH = os.getenv('TRAINING_CONTEXT')
 
 def train(model_id="deepset/tinyroberta-squad2"):
     global train_output
