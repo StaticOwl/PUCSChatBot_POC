@@ -1,7 +1,9 @@
 import argparse
 
-
 if __name__ == '__main__':
+    import sys
+    sys.path.append('.')
+
     parser = argparse.ArgumentParser()
     parser.add_argument('--train', '-t', action='store_true', help='train the model')
     parser.add_argument('--setup', '-s', action='store_true', help='setup the project')
@@ -17,9 +19,7 @@ if __name__ == '__main__':
         load_dotenv()
         scrapping.run()
     else:
-        from services.chatbot.Pipeline_Model import train
         from dotenv import load_dotenv
         from routes.runner import app
         load_dotenv()
-        train()
         app.run()
