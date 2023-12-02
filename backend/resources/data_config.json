@@ -1,9 +1,9 @@
 {
   "profile": {
-    "locator" : "div[class='dm-profile-sections']",
+    "locator" : ["div[class='dm-profile-sections']"],
     "ignore_words" : "",
     "textify" : {
-      "title" : "{title}: \n",
+      "title" : "{title}: ",
       "biography" : "{biography}\n",
       "education" : "{title} has completed the following degree programs: {education}\n",
       "courses" : "{title} teaches the following courses: {courses}\n",
@@ -13,17 +13,30 @@
     "text_config_type": "single"
   },
   "facultyList": {
-    "locator" : "div[class='people--grid_item border-b-1 border-gray-800 mb-6']",
+    "locator" : ["div[class='people--grid_item border-b-1 border-gray-800 mb-6']->facultynum"],
     "ignore_words" : ["VIEW FULL BIO"],
     "textify" : {
       "count" : "There are {count} faculties in the Purdue Fort Wayne Computer Science Department.\n",
-      "facultylist_iter" : "{facultylist_iter}\n"
+      "facultynum_iter" : "{facultynum_iter}\n"
     },
     "text_config_type": "multi"
   },
   "degreeCourse": {
-    "locator": "div[class='overflow-hidden max-w-screen']",
-    "ignore_words" : "",
-    "text_config_type": "multi"
+    "locator": [
+      "div[class='program_description ']->description",
+      "td[class='width']->details"
+    ],
+    "title_replacer": {
+      "- Acalog ACMS" : "",
+      "Program: " : ""
+    },
+    "ignore_words" : ["Print (opens a new window)", "Help (opens a new window)"],
+    "context_appender" : "degreeCourse",
+    "textify" : {
+      "title" : "{title}: ",
+      "description" : "{description}\n",
+      "details" : "The course {title} has following details as updated latest in the website url: {details}"
+    },
+    "text_config_type": "single"
   }
 }
