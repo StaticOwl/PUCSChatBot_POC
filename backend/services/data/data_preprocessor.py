@@ -60,5 +60,5 @@ def textify_data(big_data, configs: dict = None):
 
         content += "\n\n"
 
-    with open(os.getenv("TRAINING_CONTEXT"), 'w+') as f:
+    with open(os.getenv("TRAINING_CONTEXT"), 'w+', encoding='utf-8') as f:
         f.write(insert_newline(content, int(os.getenv("PALM_API_MAX_CHARS"))))
