@@ -18,7 +18,7 @@ def test(question, data_file=DEFAULT_TRAINING_PATH, max_answer_len=50):
 
     answer = train_output(question=question, context=context, max_answer_len=max_answer_len)
 
-    return answer['answer']
+    return answer['answer'], None, None
 
 # #Examples
 # tqa=train("deepset/tinyroberta-squad2")

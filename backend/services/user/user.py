@@ -1,9 +1,17 @@
+import re
+
 from backend.services.db.conn import get_cursor_conn
 
-
+EMAIL_REGEX = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,7}\b'
 GUEST_ID = 'guest'
 
 def register_user(name, email, password):
+    if len(name) == 0 or len(email) == 0 or len(password) == 0:
+        raise Exception('Invalid registration data.')
+
+    if not re.fullmatch(EMAIL_REGEX, email):
+        raise Exception('Invalid email.')
+
     cursor, conn = get_cursor_conn()
 
     data = (name, email, password)

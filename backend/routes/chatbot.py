@@ -15,4 +15,5 @@ def chat():
     request_data = request.get_json()
     user_msg = request_data.get('user_msg', '')
 
-    return {'response': cbchat.chat(user_msg, user_id=user_id)}, 200
+    final_response, actual_response, confidence = cbchat.chat(user_msg, user_id=user_id)
+    return {'response': final_response, 'actual_response': actual_response, 'confidence': confidence}, 200
