@@ -19,4 +19,4 @@ app.register_blueprint(db_bp)
 
 @app.errorhandler(Exception)
 def handle_exception(e):
-    return {'error': str(e)}
+    return {'error': str(e)}, 500

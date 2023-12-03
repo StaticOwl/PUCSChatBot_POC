@@ -63,6 +63,9 @@ def train(path_to_data=DEFAULT_TRAINING_PATH):
 
 
 def test(query, threshold=DEFAULT_PALM_THRESHOLD, **kwargs):
+    """
+    :return: a tuple of values final response (meant for user), original response (None in case of error), confidence
+    """
     docs = DB.similarity_search(query)
     try:
         result = CHAIN.run(input_documents=docs, question=query).strip()
@@ -78,13 +81,13 @@ def test(query, threshold=DEFAULT_PALM_THRESHOLD, **kwargs):
         conn.commit()
 
         if float(accuracy) < threshold:
-            return REDIRECTION_MSG, accuracy
+            return REDIRECTION_MSG, result, accuracy
         else:
-            return result, accuracy
+            return result, result, accuracy
     except (IndexError, AttributeError) as e:
         print(traceback.format_exc())
         print()
-        return NO_RESPONSE_MSG, 0
+        return NO_RESPONSE_MSG, None, 0
 
 
 DB = CHAIN = None
