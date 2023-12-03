@@ -43,12 +43,16 @@ async def scrape(playwright: Playwright, url: str, locator_config: dict = None):
     data = {}
     strict_no_elements = ["Email", ".pptx", "Title not found"]
     browser = await playwright.chromium.launch(headless=True)
-    page = await browser.new_page()
+    context = await browser.new_context(
+        ignore_https_errors=True,
+        permissions=["geolocation"],
+    )
+    page = await context.new_page()
     url_set = url.split("||")
     url_link = url_set[0].strip()
     url_content = url_set[1].strip() if len(url_set) > 1 else None
     try:
-        await page.goto(url_link, timeout=50000)
+        await page.goto(url_link, wait_until="domcontentloaded")
         await page.evaluate('''
             document.querySelectorAll('[x-data]').forEach((element) => {
                 element.removeAttribute('x-data');
@@ -69,6 +73,7 @@ async def scrape(playwright: Playwright, url: str, locator_config: dict = None):
             for locator in locators:
                 if len(locator.split("->")) > 1:
                     locator, context_appender = locator.split("->")
+                await page.wait_for_selector(locator, timeout=int(os.getenv("PAGE_LOAD_TIMEOUT")))
                 site_main_element = page.locator(locator)
                 site_main_element_count = await site_main_element.count()
                 if site_main_element_count > 1:
