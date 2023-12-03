@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Login from "./Components/Login";
@@ -8,12 +8,12 @@ import Home from "./Components/Home";
 
 function App() {
   const [user, setUser] = useState(
-    JSON.parse(localStorage.getItem("user")) || {
-      logged_in: false,
-      user: "",
-      email: "",
-    }
+    JSON.parse(localStorage.getItem("user"))
   );
+  useEffect(()=> {
+    const get_user = JSON.parse(localStorage.getItem("user"));
+    if(get_user) setUser(get_user);
+  }, []);
   console.log("User:");
   console.log(user);
   const [currentForm, setCurrentForm] = useState("login");
@@ -27,7 +27,7 @@ function App() {
       <div className="container">
         {!user.logged_in &&
           (currentForm === "login" ? (
-            <Login handler={setUser} onFormSwitch={toggleForm} />
+            <Login onFormSwitch={toggleForm} />
           ) : (
             <Register onFormSwitch={toggleForm} />
           ))}

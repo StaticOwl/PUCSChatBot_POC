@@ -15,8 +15,11 @@ const Login = (props) => {
             password:password,
             is_guest:false
         }).then(function (res) {
-            const user = {'user': res.user, 'email': res.email, 'logged_in': res.logged_in};
-            localStorage.setItem('user', JSON.stringify(user));
+            console.log(res);
+            const user = {name: res.name, email: res.email, logged_in: true};
+            localStorage.setItem("user", JSON.stringify(user));
+
+            window.location.reload();
         });
     }
 
@@ -24,11 +27,11 @@ const Login = (props) => {
         e.preventDefault();
         // console.log(email);
         axios.post('http://127.0.0.1:5000/v1/app/login', {
-            email:this.email, 
-            password:this.password,
+            email:email, 
+            password:password,
             is_guest:true
         }).then(function (res) {
-            const user = {'user': email, 'email': email, 'logged_in': true};
+            const user = {name: res.name, email: res.email, logged_in: true};
             console.log(user);
             localStorage.setItem('user', JSON.stringify(user));
             window.location.reload();

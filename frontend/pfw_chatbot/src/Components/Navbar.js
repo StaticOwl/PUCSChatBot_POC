@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import "./Navbar.css"
 
 const Navbar = () => {
     var user = JSON.parse(localStorage.getItem('user'));
@@ -19,7 +20,7 @@ const Navbar = () => {
         <nav className="navbar" style={{display:"flex", backgroundColor:"black", color:"white"}}>
             <div style={{padding:'10px', marginLeft: '50px'}}><h1>PFW</h1></div>
             <div style={{marginLeft:'auto'}}>
-                {showLogoutButton.current && <button style={{padding:'15px', margin:'15px'}} onClick={handleLogout}>Logout</button>}
+                {showLogoutButton.current && <button className="logout-button" onClick={handleLogout}>Logout</button>}
             </div>
         </nav>
      );
