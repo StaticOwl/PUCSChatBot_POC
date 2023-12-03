@@ -1,26 +1,48 @@
 import { useState } from "react";
 import "./App.css";
-import Modal from "./Components/Modal";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Login from "./Components/Login";
+import Register from "./Components/Register";
 import Navbar from "./Components/Navbar";
+import Home from "./Components/Home";
 
 function App() {
-  const [showModal, setShowModal] = useState(false)
+  const [user, setUser] = useState(
+    JSON.parse(localStorage.getItem("user")) || {
+      logged_in: false,
+      user: "",
+      email: "",
+    }
+  );
+  console.log("User:");
+  console.log(user);
+  const [currentForm, setCurrentForm] = useState("login");
+  // const []
+  const toggleForm = (formName) => {
+    setCurrentForm(formName);
+  };
   return (
     <div className="App">
       <Navbar></Navbar>
-      <div className="content">
-        <h1>PFW Computer Science Department</h1>
-        <div>
-          <p>Welcome to PFW, Computer Science Department! </p>
-        </div>
+      <div className="container">
+        {!user.logged_in &&
+          (currentForm === "login" ? (
+            <Login handler={setUser} onFormSwitch={toggleForm} />
+          ) : (
+            <Register onFormSwitch={toggleForm} />
+          ))}
+        {user.logged_in && (
+          <BrowserRouter>
+            <Routes>
+              <Route path="/">
+                <Route index element={<Home />}></Route>
+              </Route>
+            </Routes>
+          </BrowserRouter>
+        )}
       </div>
-      <button className="ChatButton" onClick={() => {
-        setShowModal(true);
-      }}>Chat with us!</button>
-      {showModal && <Modal hideModal={setShowModal} />}
     </div>
   );
 }
 
 export default App;
- 

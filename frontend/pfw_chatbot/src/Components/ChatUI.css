@@ -35,6 +35,11 @@
     background-color: white;
     text-align: left;
 }
+.confidence {
+    text-align: left;
+    font-size: small;
+    margin-left: 1em;
+}
 .sender {
     margin: 2px;
     padding: 0 10px 0;

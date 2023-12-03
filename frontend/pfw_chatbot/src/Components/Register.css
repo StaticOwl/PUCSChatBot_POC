@@ -1,0 +1,23 @@
+.register-container{
+    background-color: rgb(230, 210, 61);
+    font-size: medium;
+    border: solid 5px black;
+    padding: 20px;
+    border-radius: 20px;
+}
+.register-container button{
+    background-color: black;
+    font-size: medium;
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+    margin: 10px 0;
+    width: 90%;
+    border-radius: 10px;
+
+}
+.register-form input{
+    padding: 10px;
+    margin: 10px 0;
+    width: 90%;
+}
