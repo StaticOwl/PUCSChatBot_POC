@@ -23,16 +23,16 @@ const Login = (props) => {
     const handleGuestLogin = (e) => {
         e.preventDefault();
         // console.log(email);
-        // axios.post('http://127.0.0.1:5000/v1/app/login', {
-            // email:this.email, 
-            // password:this.password,
-            // is_guest:true
-        // }).then(function (res) {
+        axios.post('http://127.0.0.1:5000/v1/app/login', {
+            email:this.email, 
+            password:this.password,
+            is_guest:true
+        }).then(function (res) {
             const user = {'user': email, 'email': email, 'logged_in': true};
             console.log(user);
             localStorage.setItem('user', JSON.stringify(user));
             window.location.reload();
-        // });
+        });
     }
     return (
         <>
