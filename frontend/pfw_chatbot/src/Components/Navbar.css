@@ -1,0 +1,9 @@
+.logout-button{
+    margin: 15px;
+    color:black;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: white;
+    font-weight: bold;
+    font-size: large;
+}

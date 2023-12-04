@@ -35,6 +35,11 @@
     background-color: white;
     text-align: left;
 }
+.confidence {
+    text-align: left;
+    font-size: small;
+    margin-left: 1em;
+}
 .sender {
     margin: 2px;
     padding: 0 10px 0;
@@ -42,7 +47,7 @@
     border-radius: 10px 10px 0 0;
 }
 .send-btn {
-    width: 12%;
+    width: 10%;
     padding: 10px 0 10px;
     background-color: #474712;
     color: white;

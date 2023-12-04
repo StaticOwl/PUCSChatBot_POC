@@ -8,7 +8,7 @@ user_bp = Blueprint('user_bp', __name__)
 
 USER_ID_COOKIE = 'user_id'
 
-@cross_origin(methods=['POST'])
+@cross_origin
 @user_bp.route('/v1/app/register', methods=['POST'])
 def register():
     request_data = request.get_json()
@@ -21,7 +21,7 @@ def register():
     return {'id': id, 'email': email}
 
 
-@cross_origin(methods=['POST'])
+@cross_origin
 @user_bp.route('/v1/app/login', methods=['POST'])
 def login():
     request_data = request.get_json()

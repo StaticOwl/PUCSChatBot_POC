@@ -5,7 +5,7 @@ import "./ChatUI.css";
 const ChatUI = () => {
   // Keep track of all messages
   const [messages, setMessages] = useState([
-    { text: "Hello, how can I help you?", sender: "bot" },
+    { text: "Hello, how can I help you?", sender: "bot"},
     { text: "Hi there!", sender: "user" },
   ]);
   // Keep track of contents of input form
@@ -30,17 +30,17 @@ const ChatUI = () => {
     const updatedMessages = [
       ...messages,
       { text: newMessage, sender: "user" },
-      // { text: "Standard response", sender: "bot" },
+      { text: "...", sender: "bot" },
     ];
     setMessages(updatedMessages);
     setNewMessage("");
     //Receive reply from server
     axios.post('http://127.0.0.1:5000/v1/chatbot/chat', {
-      user_msg: newMessage,
+      user_msg: newMessage
     })
     .then(function (res) {
       console.log(res);
-      const updatedMessagesWithRes = [...messages, { text: newMessage, sender: 'user' },{ text: res.data.response, sender: 'bot' }];
+      const updatedMessagesWithRes = [...messages, { text: newMessage, sender: 'user' },{ text: res.data.response, sender: 'bot', confidence: res.data.confidence}];
       setMessages(updatedMessagesWithRes);
     })
     .then(function (err) {console.log(err);})
@@ -51,7 +51,7 @@ const ChatUI = () => {
       <div className="chat-window">
         <div className="messages-container" ref={containerRef}>
           {messages.map((message, index) => (
-            <div className="message-box">
+            <div className="message-box"  key={index}>
               <div
                 className={`sender ${
                   message.sender === "user" ? "user" : "bot"
@@ -62,13 +62,15 @@ const ChatUI = () => {
                 </span>
               </div>
               <div
-                key={index}
+               
                 className={`message ${
                   message.sender === "user" ? "user" : "bot"
                 }`}
               >
                 {message.text}
+                
               </div>
+              <div className="confidence">{message.sender==='bot' && message.confidence}</div>
             </div>
           ))}
         </div>
