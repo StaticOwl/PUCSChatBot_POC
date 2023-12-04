@@ -64,6 +64,7 @@ async def scrape(playwright: Playwright, url: str, locator_config: dict = None):
             if bool(config.get('shrink')):
                 for element in await page.query_selector_all("*[aria-expanded]"):
                     await element.click()
+                await asyncio.sleep(int(os.getenv("EXPAND_WAIT_TIME")))
             title_replacements = config.get('title_replacer')
             data['title'] = safe_replace(safe_replace(page_title[0], replacements), title_replacements).strip()
             data['type'] = url_content
