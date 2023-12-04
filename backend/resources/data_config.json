@@ -38,5 +38,17 @@
       "details" : "The course {title} has following details as updated latest in the website url: {details}"
     },
     "text_config_type": "single"
+  },
+  "courseList": {
+    "locator": [
+      "td[class='coursepadding']->coursename"
+    ],
+    "ignore_words" : ["[Print Course (opens a new window)]", "Print (opens a new window)"],
+    "textify" : {
+      "count" : "There are {count} courses available in the Purdue Fort Wayne Computer Science Department.\n",
+      "coursename_iter" : "{coursename_iter}\n"
+    },
+    "text_config_type": "multi",
+    "shrink" : "true"
   }
 }

@@ -53,11 +53,6 @@ async def scrape(playwright: Playwright, url: str, locator_config: dict = None):
     url_content = url_set[1].strip() if len(url_set) > 1 else None
     try:
         await page.goto(url_link, wait_until="domcontentloaded")
-        await page.evaluate('''
-            document.querySelectorAll('[x-data]').forEach((element) => {
-                element.removeAttribute('x-data');
-            });
-        ''')
         page_title = await page.title()
         page_title = page_title.split('|')
         flag = not any(element in page_title[0] for element in strict_no_elements)
@@ -66,6 +61,10 @@ async def scrape(playwright: Playwright, url: str, locator_config: dict = None):
             config = locator_config.get(url_content)
             context_appender: str = ""
             locators = config.get('locator')
+            if bool(config.get('shrink')):
+                for element in await page.query_selector_all("*[aria-expanded]"):
+                    await element.click()
+                await asyncio.sleep(int(os.getenv("EXPAND_WAIT_TIME")))
             title_replacements = config.get('title_replacer')
             data['title'] = safe_replace(safe_replace(page_title[0], replacements), title_replacements).strip()
             data['type'] = url_content
