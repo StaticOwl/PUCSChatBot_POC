@@ -6,19 +6,33 @@ const Register = (props) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
 
+  const [error, setError] = useState("");
   const handleRegister = (e) => {
     e.preventDefault();
-    axios.post("http://127.0.0.1:5000/v1/app/register", {
-      name: name,
-      email: email,
-      password: password
-    }).then(
-        function(res) {
-            console.log("Registered successful!");
-            props.onFormSwitch("login");
-        }
-    );
+    if(name === '') setError("Name is empty!");
+    else if (email === '') setError("Email is empty!");
+    else if (password === '') setError("Password is empty!");
+    else if (password !== confirmPassword) setError("Passwords do not match!");
+    else{
+        axios.post("http://127.0.0.1:5000/v1/app/register", {
+        name: name,
+        email: email,
+        password: password
+        }).then(
+            function(res) {
+                console.log("Registered successful!");
+                props.onFormSwitch("login");
+                setError("");
+            }
+        ).catch(
+            function(error){
+                console.log(error);
+                setError("Invalid input details");
+            }
+        );
+    }
     
   };
 
@@ -53,11 +67,12 @@ const Register = (props) => {
           <input
             type="password"
             id="passwd"
-            value={password}
+            value={confirmPassword}
             placeholder="Re-enter password"
-            onChange={(e) => setPassword(e.target.value)}
+            onChange={(e) => setConfirmPassword(e.target.value)}
           />
           <br />
+          <p className="error">{error}</p>
           <button type="submit"> Register </button>
         </form>
         <button onClick={() => props.onFormSwitch("login")}>
