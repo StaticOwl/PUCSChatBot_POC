@@ -8,7 +8,7 @@ import Home from "./Components/Home";
 
 function App() {
   const [user, setUser] = useState(
-    JSON.parse(localStorage.getItem("user"))
+    {name:'', email:'', logged_in:false}
   );
   useEffect(()=> {
     const get_user = JSON.parse(localStorage.getItem("user"));
@@ -23,7 +23,7 @@ function App() {
   };
   return (
     <div className="App">
-      <Navbar></Navbar>
+      <Navbar user={user}></Navbar>
       <div className="container">
         {!user.logged_in &&
           (currentForm === "login" ? (

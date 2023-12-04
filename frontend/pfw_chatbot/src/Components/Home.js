@@ -1,9 +1,8 @@
 import { useState } from "react";
 import Modal from "./Modal";
 
-const Home = (props) => {
+const Home = () => {
   const [showModal, setShowModal] = useState(false);
-  console.log( props.user);
 
   return (
     <>
