@@ -14,22 +14,6 @@ from .data_preprocessor import update_json_structure, textify_data
 
 dataset = []
 
-replacements = {
-    "\n": " ",
-    " – ": "-",
-    "—": "-",
-    "●": "*",
-    "–": "-",
-    "“": "\"",
-    "’": "'",
-    "”": "\"",
-    "‘": "'",
-    "é": "e",
-    "™": "",
-    " ": "",
-
-}
-
 
 async def scrape(playwright: Playwright, url: str, locator_config: dict = None):
     """
@@ -66,7 +50,7 @@ async def scrape(playwright: Playwright, url: str, locator_config: dict = None):
                     await element.click()
                 await asyncio.sleep(int(os.getenv("EXPAND_WAIT_TIME")))
             title_replacements = config.get('title_replacer')
-            data['title'] = safe_replace(safe_replace(page_title[0], replacements), title_replacements).strip()
+            data['title'] = safe_replace(safe_replace(page_title[0]), title_replacements).strip()
             data['type'] = url_content
             ignore_words = config.get('ignore_words')
             for locator in locators:
@@ -76,6 +60,7 @@ async def scrape(playwright: Playwright, url: str, locator_config: dict = None):
                 site_main_element = page.locator(locator)
                 site_main_element_count = await site_main_element.count()
                 if site_main_element_count > 1:
+                    site_main_element_count -= int(config.get('count_subtractor', '0'))
                     data['count'] = str(site_main_element_count)
                 for i in range(site_main_element_count):
                     site_main_element_ith = site_main_element.nth(i)
@@ -83,10 +68,11 @@ async def scrape(playwright: Playwright, url: str, locator_config: dict = None):
                     if len(ignore_words) > 0:
                         for word in ignore_words:
                             site_main_content = site_main_content.replace(word, '')
+                    site_main_content = safe_replace(site_main_content, config.get('text_replacer', {}))
                     data['context'] = (context_appender +
                                        ("_" + str(i) + " " if site_main_element_count > 1 else "") +
                                        (" " if context_appender != "" else "") +
-                                       safe_replace(site_main_content, replacements).strip())
+                                       safe_replace(site_main_content).strip())
 
                     temp_dataset.append(data.copy())
         await browser.close()

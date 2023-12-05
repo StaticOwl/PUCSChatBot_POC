@@ -16,10 +16,11 @@
     "locator" : ["div[class='people--grid_item border-b-1 border-gray-800 mb-6']->facultynum"],
     "ignore_words" : ["VIEW FULL BIO"],
     "textify" : {
-      "count" : "There are {count} faculties in the Purdue Fort Wayne Computer Science Department.\n",
-      "facultynum_iter" : "{facultynum_iter}\n"
+      "count" : "There are {count} faculties in the Purdue Fort Wayne Computer Science Department. They are as follows: \n",
+      "facultynum_iter" : "iter. {facultynum_iter}\n"
     },
-    "text_config_type": "multi"
+    "text_config_type": "multi",
+    "count_subtractor" : 1
   },
   "degreeCourse": {
     "locator": [
@@ -45,10 +46,13 @@
     ],
     "ignore_words" : ["[Print Course (opens a new window)]", "Print (opens a new window)"],
     "textify" : {
-      "count" : "There are {count} courses available in the Purdue Fort Wayne Computer Science Department.\n",
-      "coursename_iter" : "{coursename_iter}\n"
+      "count" : "There are {count} courses available in the Purdue Fort Wayne Computer Science Department. They are as follows: \n",
+      "coursename_iter" : "iter. {coursename_iter}\n"
     },
     "text_config_type": "multi",
-    "shrink" : "true"
+    "shrink" : "true",
+    "text_replacer" : {
+      "Cr.": "Credits Offered: "
+    }
   }
 }

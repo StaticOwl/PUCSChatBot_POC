@@ -2,6 +2,21 @@
 This file contains utility functions for data processing.
 """
 
+common_replacements = {
+    "\n": " ",
+    " – ": "-",
+    "—": "-",
+    "●": "*",
+    "–": "-",
+    "“": "\"",
+    "’": "'",
+    "”": "\"",
+    "‘": "'",
+    "é": "e",
+    "™": "",
+    " ": ""
+}
+
 
 def update_keys_with_substring(data, substring, new_value):
     """
@@ -49,13 +64,15 @@ def insert_newline(sentence, max_chars=500):
     return '\n'.join(result)
 
 
-def safe_replace(string, replacement: dict = None):
+def safe_replace(string, replacement=None):
     """
     This method is used to replace the string with the replacement dictionary.
     :param string: string to be replaced.
     :param replacement: replacement dictionary.
     :return: updated string.
     """
+    if replacement is None:
+        replacement = common_replacements
     if replacement is not None:
         for k, v in replacement.items():
             string = string.replace(k, v)
