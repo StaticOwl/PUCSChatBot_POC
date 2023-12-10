@@ -3,7 +3,7 @@ This script is going to be used for processing the data that is scrapped from th
 """
 
 import os
-
+import shutil
 from backend.utils.data_utils import update_keys_with_substring, insert_newline
 
 
@@ -61,4 +61,7 @@ def textify_data(big_data, configs: dict = None):
         content += "\n\n"
 
     with open(os.getenv("TRAINING_CONTEXT"), 'w+', encoding='utf-8') as f:
+        shutil.rmtree(os.getenv("RUNTIME_PATH"), ignore_errors=True)
+        os.makedirs(os.getenv("RUNTIME_PATH"), exist_ok=True)
         f.write(insert_newline(content, int(os.getenv("PALM_API_MAX_CHARS"))))
+        f.write(insert_newline(content.lower(), int(os.getenv("PALM_API_MAX_CHARS"))))

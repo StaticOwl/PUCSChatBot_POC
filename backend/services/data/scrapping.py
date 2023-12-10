@@ -5,7 +5,6 @@ use the selectors to get the data from the webpages."""
 import asyncio
 import json
 import os
-import shutil
 
 from playwright.async_api import async_playwright, Playwright
 
@@ -103,10 +102,6 @@ def run():
     This method is used to run the scraper.
     :return: This writes the scrapped data in text format in the runtime folder so that it can be used for training.
     """
-    # Delete the runtime folder and create a new one
-    shutil.rmtree(os.getenv("RUNTIME_PATH"), ignore_errors=True)
-    os.makedirs(os.getenv("RUNTIME_PATH"), exist_ok=True)
-
     locator_config = json.load(open(os.getenv("LOCATOR_CONFIG_PATH")))
 
     result = asyncio.run(browse(locator_config))

@@ -10,6 +10,9 @@
       "publications" : "{title} has published the following publications: {publications}\n",
       "presentations" : "{title} has presented the following presentations: {presentations}\n"
     },
+    "text_replacer" : {
+      "Sys": "Systems"
+    },
     "text_config_type": "single"
   },
   "facultyList": {
