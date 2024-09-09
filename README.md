@@ -1,4 +1,4 @@
-# PFW_ChatBot (Please keep this readme updated)
+# PUCSChatBot (Please keep this readme updated)
 
 CS59000-03 Group Project for Course
 
